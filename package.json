@@ -1,7 +1,7 @@
 {
-  "name": "repo-template",
-  "version": "1.0.42",
-  "description": "A template for creating new repositories.",
+  "name": "commitlint-config",
+  "version": "1.0.0",
+  "description": "Commitlint configuration.",
   "private": true,
   "scripts": {
     "lint": "run-p format:check lint-es",
@@ -16,14 +16,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vidavidorra/repo-template.git"
+    "url": "git+https://github.com/vidavidorra/commitlint-config.git"
   },
+  "keywords": [
+    "commitlint",
+    "commitlintconfig",
+    "config",
+    "configuration"
+  ],
   "author": "Jeroen de Bruijn",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/vidavidorra/repo-template/issues"
+    "url": "https://github.com/vidavidorra/commitlint-config/issues"
   },
-  "homepage": "https://github.com/vidavidorra/repo-template#readme",
+  "homepage": "https://github.com/vidavidorra/commitlint-config#readme",
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "9.1.2",
