@@ -35,7 +35,9 @@
     "url": "https://github.com/vidavidorra/commitlint-config/issues"
   },
   "homepage": "https://github.com/vidavidorra/commitlint-config#readme",
-  "dependencies": {},
+  "dependencies": {
+    "commitlint-plugin-function-rules": "1.1.7"
+  },
   "devDependencies": {
     "@commitlint/cli": "9.1.2",
     "@commitlint/config-conventional": "9.1.2",
