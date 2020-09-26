@@ -1,0 +1,108 @@
+import { describe, expect, it } from '@jest/globals';
+import { RuleOutcome } from '@commitlint/types';
+import headerMaxLength from './header-max-length';
+import parse from '@commitlint/parse';
+
+interface MessageConfig {
+  regular: string;
+  dependency: string;
+  padding: string;
+  maxLength: number;
+  maxDependencyLength: number;
+}
+
+/**
+ * Due to a bug in the `.each` type, it is not possible to use it with
+ * `@jest/globals`. See https://github.com/facebook/jest/issues/10447 for the
+ * specific issue. As a workaround the TypeScript error is ignored.
+ */
+describe('headerMaxLength', () => {
+  const successResult: RuleOutcome = [true];
+  const messageConfig: Readonly<MessageConfig> = {
+    regular: [
+      'Knowledge, like air, is vital to life. Like air, no one should be',
+      'denied it.',
+    ].join(' '),
+    dependency: [
+      'We are told to remember the idea, not the man, because a man can fail.',
+      'He can be caught, he can be killed and forgotten, but 400 years later,',
+      'an idea can still change the world.',
+    ].join(' '),
+    padding: '*',
+    maxLength: 100,
+    maxDependencyLength: 200,
+  };
+
+  it('succeeds with a short message', async () => {
+    const message = await parse(
+      `chore: ${messageConfig.regular}`.padEnd(
+        messageConfig.maxLength,
+        messageConfig.padding,
+      ),
+    );
+    const result = headerMaxLength(message);
+
+    expect(result).toEqual(successResult);
+  });
+
+  it('fails with a long message', async () => {
+    const message = await parse(
+      `chore: ${messageConfig.regular}`.padEnd(
+        messageConfig.maxLength + 1,
+        messageConfig.padding,
+      ),
+    );
+    const expectedResult: RuleOutcome = [
+      false,
+      [
+        `header must not be longer than ${messageConfig.maxLength} characters,`,
+        `current length is ${message.raw.length}`,
+      ].join(' '),
+    ];
+    const result = headerMaxLength(message);
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error: TS2349: This expression is not callable.
+  it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)', 'fix(peer-deps)'])(
+    "succeeds with a short '%s' dependency message",
+    async (prefix: string) => {
+      const message = await parse(
+        `${prefix}: ${messageConfig.dependency}`.padEnd(
+          messageConfig.maxDependencyLength,
+          messageConfig.padding,
+        ),
+      );
+      const result = headerMaxLength(message);
+
+      expect(result).toEqual(successResult);
+    },
+  );
+
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error: TS2349: This expression is not callable.
+  it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)', 'fix(peer-deps)'])(
+    "fails with a long '%s' dependency message",
+    async (prefix: string) => {
+      const message = await parse(
+        `${prefix}: ${messageConfig.dependency}`.padEnd(
+          messageConfig.maxDependencyLength + 1,
+          messageConfig.padding,
+        ),
+      );
+      const expectedResult: RuleOutcome = [
+        false,
+        [
+          'header for dependency commits must not be longer than',
+          `${messageConfig.maxDependencyLength} characters, current length is`,
+          message.raw.length,
+        ].join(' '),
+      ];
+      const result = headerMaxLength(message);
+
+      expect(result).toEqual(expectedResult);
+    },
+  );
+});

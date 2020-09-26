@@ -15,10 +15,26 @@
   },
   "packageRules": [
     {
-      "description": "Auto-merge dependencies",
+      "description": "Auto-merge dependencies.",
       "depTypeList": ["devDependencies", "dependencies"],
       "updateTypes": ["pin", "digest", "patch", "minor"],
       "automerge": true
+    },
+    {
+      "packagePatterns": ["^@commitlint/"],
+      "depTypeList": ["devDependencies"],
+      "groupName": "devDependencies commitlint monorepo"
+    },
+    {
+      "packagePatterns": ["^@commitlint/"],
+      "depTypeList": ["dependencies"],
+      "groupName": "dependencies commitlint monorepo"
+    },
+    {
+      "description": "Disable for aliased packages with final version.",
+      "packagePatterns": ["^@commitlint/(lint|load)\\-(9|10)\\.x"],
+      "depTypeList": ["devDependencies"],
+      "enabled": false
     }
   ],
   "prCreation": "not-pending"

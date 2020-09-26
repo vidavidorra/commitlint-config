@@ -1,8 +1,7 @@
 {
   "name": "@vidavidorra/commitlint-config",
   "version": "1.0.0",
-  "description": "Commitlint configuration.",
-  "private": true,
+  "description": "commitlint configuration.",
   "scripts": {
     "lint": "run-p format:check build:check lint-es",
     "lint:fix": "run-s format lint-es:fix",
@@ -15,6 +14,8 @@
     "format:file": "prettier --write",
     "build": "tsc",
     "build:check": "tsc --noEmit",
+    "build:clean": "run-s clean build",
+    "clean": "rm -rf ./dist",
     "test": "jest",
     "test:ci": "jest --ci --verbose",
     "test:staged": "jest --passWithNoTests --findRelatedTests $(git diff --staged --name-only)"
@@ -36,14 +37,22 @@
   },
   "homepage": "https://github.com/vidavidorra/commitlint-config#readme",
   "dependencies": {
+    "@commitlint/config-conventional": "9.1.2",
+    "@commitlint/types": "11.0.0",
     "commitlint-plugin-function-rules": "1.1.7"
   },
   "devDependencies": {
     "@commitlint/cli": "9.1.2",
-    "@commitlint/config-conventional": "9.1.2",
+    "@commitlint/lint-10.x": "npm:@commitlint/lint@10.0.0",
+    "@commitlint/lint-11.x": "npm:@commitlint/lint@11.0.0",
+    "@commitlint/lint-9.x": "npm:@commitlint/lint@9.1.2",
+    "@commitlint/load-10.x": "npm:@commitlint/load@10.0.0",
+    "@commitlint/load-11.x": "npm:@commitlint/load@11.0.0",
+    "@commitlint/load-9.x": "npm:@commitlint/load@9.1.2",
     "@jest/globals": "26.4.2",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
+    "@types/node": "14.11.2",
     "@typescript-eslint/eslint-plugin": "4.2.0",
     "@typescript-eslint/parser": "4.2.0",
     "eslint": "7.9.0",
