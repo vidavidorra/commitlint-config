@@ -1,3 +1,10 @@
+### [1.0.4](https://github.com/vidavidorra/commitlint-config/compare/v1.0.3...v1.0.4) (2020-09-27)
+
+
+### Documentation
+
+* add build and npm version badges ([194cd0c](https://github.com/vidavidorra/commitlint-config/commit/194cd0c543ec39e274f044a1a5324abd9066db76))
+
 ### [1.0.3](https://github.com/vidavidorra/commitlint-config/compare/v1.0.2...v1.0.3) (2020-09-27)
 
 
