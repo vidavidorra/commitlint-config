@@ -2,6 +2,11 @@
   "name": "@vidavidorra/commitlint-config",
   "version": "1.0.1",
   "description": "commitlint configuration.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/src/**/!(*.test).{js,d.ts}"
+  ],
   "scripts": {
     "lint": "run-p format:check build:check lint-es",
     "lint:fix": "run-s format lint-es:fix",
