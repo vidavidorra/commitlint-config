@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/vidavidorra/commitlint-config#readme",
   "dependencies": {
-    "@commitlint/config-conventional": "9.1.2",
+    "@commitlint/config-conventional": "11.0.0",
     "@commitlint/types": "11.0.0",
     "commitlint-plugin-function-rules": "1.1.7"
   },
