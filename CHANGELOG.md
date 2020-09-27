@@ -1,3 +1,21 @@
+### [1.0.7](https://github.com/vidavidorra/commitlint-config/compare/v1.0.6...v1.0.7) (2020-09-27)
+
+
+### Miscellaneous Chores
+
+* rename `build:clean` script to `build:clean-first` ([7166838](https://github.com/vidavidorra/commitlint-config/commit/71668380143a80f1fe2617c03e5ba45ecb855fd9))
+* **deps:** update dependency eslint-config-prettier to v6.12.0 ([#5](https://github.com/vidavidorra/commitlint-config/issues/5)) ([8ec923b](https://github.com/vidavidorra/commitlint-config/commit/8ec923b8e64c82ff8f0503ed659b11f1f1f65f0b))
+
+
+### Tests
+
+* **end-to-end:** rename build script to `build:clean-first` ([1c93b6d](https://github.com/vidavidorra/commitlint-config/commit/1c93b6d98441730d578f6f73b3a78a653ca2db67))
+
+
+### Continuous Integration
+
+* run full tests in lint-staged ([c9b5cc3](https://github.com/vidavidorra/commitlint-config/commit/c9b5cc38a8a1f6e9bde1151e3f65ddc39882c4ab))
+
 ### [1.0.6](https://github.com/vidavidorra/commitlint-config/compare/v1.0.5...v1.0.6) (2020-09-27)
 
 
