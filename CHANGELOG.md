@@ -1,3 +1,10 @@
+### [1.0.3](https://github.com/vidavidorra/commitlint-config/compare/v1.0.2...v1.0.3) (2020-09-27)
+
+
+### Continuous Integration
+
+* trigger release ([e0d9545](https://github.com/vidavidorra/commitlint-config/commit/e0d95450886ddea655e3477c082463f491016a1a))
+
 ### [1.0.2](https://github.com/vidavidorra/commitlint-config/compare/v1.0.1...v1.0.2) (2020-09-27)
 
 
