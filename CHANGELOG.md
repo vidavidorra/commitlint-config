@@ -1,3 +1,10 @@
+### [1.0.5](https://github.com/vidavidorra/commitlint-config/compare/v1.0.4...v1.0.5) (2020-09-27)
+
+
+### Continuous Integration
+
+* **npm:** set `access=public` ([9c909a7](https://github.com/vidavidorra/commitlint-config/commit/9c909a79b06eca1dae38788fbf0fab6364031dcf))
+
 ### [1.0.4](https://github.com/vidavidorra/commitlint-config/compare/v1.0.3...v1.0.4) (2020-09-27)
 
 
