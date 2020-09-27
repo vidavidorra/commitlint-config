@@ -1,6 +1,6 @@
 {
   "name": "@vidavidorra/commitlint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "commitlint configuration.",
   "scripts": {
     "lint": "run-p format:check build:check lint-es",

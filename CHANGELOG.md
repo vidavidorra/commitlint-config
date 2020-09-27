@@ -1,3 +1,10 @@
+### [1.0.1](https://github.com/vidavidorra/commitlint-config/compare/v1.0.0...v1.0.1) (2020-09-27)
+
+
+### Continuous Integration
+
+* publish npm package ([66b1bcc](https://github.com/vidavidorra/commitlint-config/commit/66b1bccbc4f134711b3d3e143cdd1987eb95c8c3))
+
 ## 1.0.0 (2020-09-27)
 
 
