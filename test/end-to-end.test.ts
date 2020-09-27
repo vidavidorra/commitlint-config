@@ -4,7 +4,7 @@ import { spawnSync } from 'child_process';
 describe('commitlint configuration', () => {
   beforeAll(() => {
     const timeoutMs = 30000;
-    const command = 'npm run build:clean';
+    const command = 'npm run build:clean-first';
     const [bin, ...args] = command.split(' ');
     const result = spawnSync(bin, args, { timeout: timeoutMs });
 
