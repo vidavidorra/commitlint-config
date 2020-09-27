@@ -1,3 +1,10 @@
+### [1.0.2](https://github.com/vidavidorra/commitlint-config/compare/v1.0.1...v1.0.2) (2020-09-27)
+
+
+### Bug Fixes
+
+* **package:** add `main`, `types` and `files` for the package ([db2ab99](https://github.com/vidavidorra/commitlint-config/commit/db2ab992dc62807c2946d0caf5b362094543a700))
+
 ### [1.0.1](https://github.com/vidavidorra/commitlint-config/compare/v1.0.0...v1.0.1) (2020-09-27)
 
 
