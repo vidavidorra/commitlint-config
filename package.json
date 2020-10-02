@@ -44,7 +44,7 @@
   "dependencies": {
     "@commitlint/config-conventional": "11.0.0",
     "@commitlint/types": "11.0.0",
-    "commitlint-plugin-function-rules": "1.1.11"
+    "commitlint-plugin-function-rules": "1.1.13"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
