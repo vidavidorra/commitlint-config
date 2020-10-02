@@ -1,3 +1,20 @@
+### [1.0.9](https://github.com/vidavidorra/commitlint-config/compare/v1.0.8...v1.0.9) (2020-10-02)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency actions/checkout to v2.3.3 ([#11](https://github.com/vidavidorra/commitlint-config/issues/11)) ([07e6e3b](https://github.com/vidavidorra/commitlint-config/commit/07e6e3b974a31e0c10481259001a1f5aff398eed))
+* **deps:** update dependency codecov/codecov-action to v1.0.13 ([#12](https://github.com/vidavidorra/commitlint-config/issues/12)) ([fd9624b](https://github.com/vidavidorra/commitlint-config/commit/fd9624b7dab6790b68b6ec97d25526825ae06129))
+* **deps:** update dependency ts-jest to v26.4.1 ([#15](https://github.com/vidavidorra/commitlint-config/issues/15)) ([a612138](https://github.com/vidavidorra/commitlint-config/commit/a612138a80081c5a5230c6dbad33b3e107822eba))
+* **deps:** update dependency wagoid/commitlint-github-action to v2.1.0 ([#13](https://github.com/vidavidorra/commitlint-config/issues/13)) ([c04d9b5](https://github.com/vidavidorra/commitlint-config/commit/c04d9b56f1bc919e29d51e7b644142ed3fd58185))
+* **deps:** update typescript-eslint monorepo to v4.3.0 ([#14](https://github.com/vidavidorra/commitlint-config/issues/14)) ([f27bae8](https://github.com/vidavidorra/commitlint-config/commit/f27bae8c1641dc2e0abc0329fa6c0ab4124b39c4))
+
+
+### Continuous Integration
+
+* **renovate:** fix accidental removal of `pinDependencies` ([8f3ad94](https://github.com/vidavidorra/commitlint-config/commit/8f3ad9456b7696eae1c649d7310605f93350cbcf))
+* **renovate:** migrate config to Renovate > v21.28.0 ([4b97176](https://github.com/vidavidorra/commitlint-config/commit/4b97176469feb5371fa55c3e0db3f2261345b9c2))
+
 ### [1.0.8](https://github.com/vidavidorra/commitlint-config/compare/v1.0.7...v1.0.8) (2020-09-28)
 
 
