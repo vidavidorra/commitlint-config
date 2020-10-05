@@ -22,13 +22,6 @@ describe('commitlint plugin function rules', () => {
     expect(rule).toEqual([2, 'always', rules.headerMaxLength]);
   });
 
-  /**
-   * Due to a bug in the `.each` type, it is not possible to use it with
-   * `@jest/globals`. See https://github.com/facebook/jest/issues/10447 for the
-   * specific issue. As a workaround the TypeScript error is ignored.
-   */
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error: TS2349: This expression is not callable.
   it.each([
     'body-max-line-length',
     'footer-max-line-length',
