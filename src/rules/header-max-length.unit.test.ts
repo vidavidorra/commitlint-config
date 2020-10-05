@@ -11,11 +11,6 @@ interface MessageConfig {
   maxDependencyLength: number;
 }
 
-/**
- * Due to a bug in the `.each` type, it is not possible to use it with
- * `@jest/globals`. See https://github.com/facebook/jest/issues/10447 for the
- * specific issue. As a workaround the TypeScript error is ignored.
- */
 describe('headerMaxLength', () => {
   const successResult: RuleOutcome = [true];
   const messageConfig: Readonly<MessageConfig> = {
@@ -64,8 +59,6 @@ describe('headerMaxLength', () => {
     expect(result).toEqual(expectedResult);
   });
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error: TS2349: This expression is not callable.
   it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)', 'fix(peer-deps)'])(
     "succeeds with a short '%s' dependency message",
     async (prefix: string) => {
@@ -81,8 +74,6 @@ describe('headerMaxLength', () => {
     },
   );
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error: TS2349: This expression is not callable.
   it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)', 'fix(peer-deps)'])(
     "fails with a long '%s' dependency message",
     async (prefix: string) => {
