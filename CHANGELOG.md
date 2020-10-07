@@ -1,3 +1,22 @@
+### [1.0.11](https://github.com/vidavidorra/commitlint-config/compare/v1.0.10...v1.0.11) (2020-10-07)
+
+
+### Miscellaneous Chores
+
+* update gitignore to vidavidorra/repo-template@v1.1.0 ([9bd125a](https://github.com/vidavidorra/commitlint-config/commit/9bd125acdf14e79104050c3a277265775c6bcad5))
+* **deps:** update dependency @types/node to v14.11.4 ([#20](https://github.com/vidavidorra/commitlint-config/issues/20)) ([16574b9](https://github.com/vidavidorra/commitlint-config/commit/16574b91b527237d320dfd42fb078425d8f513d1))
+* **deps:** update dependency @types/node to v14.11.5 ([#22](https://github.com/vidavidorra/commitlint-config/issues/22)) ([8991edd](https://github.com/vidavidorra/commitlint-config/commit/8991eddec315a16c334b4b62bad5dadcdc878517))
+* **deps:** update dependency actions/setup-node to v2.1.2 ([#16](https://github.com/vidavidorra/commitlint-config/issues/16)) ([798b196](https://github.com/vidavidorra/commitlint-config/commit/798b196d036b66405ad87aa6add0bb3a9abd1617))
+* **deps:** update dependency eslint-plugin-jest to v24.1.0 ([#21](https://github.com/vidavidorra/commitlint-config/issues/21)) ([f1ff794](https://github.com/vidavidorra/commitlint-config/commit/f1ff794e94daba128e53e254d0e23ea7d29402d9))
+* **deps:** update jest monorepo to v26.5.0 ([#18](https://github.com/vidavidorra/commitlint-config/issues/18)) ([8523781](https://github.com/vidavidorra/commitlint-config/commit/852378164798206731b643003490651af6760bcc))
+* **deps:** update jest monorepo to v26.5.2 ([#23](https://github.com/vidavidorra/commitlint-config/issues/23)) ([7828057](https://github.com/vidavidorra/commitlint-config/commit/7828057df8cd24fa483bbf4c3840cbdfc36fb5cf))
+* **deps:** update typescript-eslint monorepo to v4.4.0 ([#19](https://github.com/vidavidorra/commitlint-config/issues/19)) ([31cb8c8](https://github.com/vidavidorra/commitlint-config/commit/31cb8c89cd4d649da45e461aa65c123f357343cb))
+
+
+### Continuous Integration
+
+* separate build check from lint and check build pre-commit ([1f9cbfe](https://github.com/vidavidorra/commitlint-config/commit/1f9cbfe2470d2b2f2928ca3073e9a09ca17b76a6))
+
 ### [1.0.10](https://github.com/vidavidorra/commitlint-config/compare/v1.0.9...v1.0.10) (2020-10-02)
 
 
