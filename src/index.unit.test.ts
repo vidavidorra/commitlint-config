@@ -16,7 +16,6 @@ describe('commitlint plugin function rules', () => {
   });
 
   it("creates the 'function-rules/header-max-length' rule", () => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-expect-error: TS2532: Object is possibly 'undefined'.
     const rule = config.rules['function-rules/header-max-length'];
     expect(rule).toEqual([2, 'always', rules.headerMaxLength]);
@@ -27,7 +26,6 @@ describe('commitlint plugin function rules', () => {
     'footer-max-line-length',
     'header-max-length',
   ])("disables the '%s' rule", (ruleName: string) => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-expect-error: TS2532: Object is possibly 'undefined'.
     const rule = config.rules[ruleName];
     expect(rule).toEqual([0]);
