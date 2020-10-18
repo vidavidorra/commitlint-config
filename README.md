@@ -1,26 +1,70 @@
 # commitlint configuration
 
-commitlint configuration.
+[commitlint](https://commitlint.js.org/) configuration extending [@commitlint/config-conventional][@commitlint/config-conventional].
+
+- Based on [@commitlint/config-conventional][@commitlint/config-conventional].
+- Allow longer commit messages headers specifically for dependency management tools like [WhiteSource Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate).
+- No restriction on maximum line length of body and footer.
+
+---
+
+[![npm version](https://img.shields.io/npm/v/@vidavidorra/commitlint-config?logo=npm&style=flat-square)](https://www.npmjs.com/package/@vidavidorra/commitlint-config)
+[![npm downloads](https://img.shields.io/npm/dm/@vidavidorra/commitlint-config?logo=npm&style=flat-square)](https://www.npmjs.com/package/@vidavidorra/commitlint-config)
+[![Renovate enabled](https://img.shields.io/badge/Renovate-enabled-brightgreen.svg?logo=renovatebot&logoColor&style=flat-square)](https://renovatebot.com)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+[![Code coverage](https://img.shields.io/codecov/c/github/vidavidorra/commitlint-config?logo=codecov&style=flat-square)](https://codecov.io/gh/vidavidorra/commitlint-config)
+[![License](https://img.shields.io/github/license/vidavidorra/commitlint-config.svg?style=flat-square)](LICENSE.md)
 
 <a name="toc"></a>
 
 ## Table of contents
 
-- [Badges](#badges)
+- [Install](#install)
+- [Usage](#usage)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Security policy](#security-policy)
 - [License](#license)
 
-## Badges
+## Install
 
-| Badge                                                                                                                                                                                                                                  | Description          | Service              |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | -------------------- |
-| <a href="https://github.com/prettier/prettier#readme"><img alt="code style" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>                                                                   | Code style           | Prettier             |
-| <a href="https://conventionalcommits.org"><img alt="Conventional Commits: 1.0.0" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square"></a>                                                     | Commit style         | Conventional Commits |
-| <a href="https://github.com/semantic-release/semantic-release"><img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square"></a>                       | Version management   | semantic-release     |
-| <a href="https://renovatebot.com"><img alt="Renovate enabled" src="https://img.shields.io/badge/renovate-enabled-brightgreen.svg?style=flat-square"></a>                                                                               | Dependencies         | Renovate             |
-| <a href="https://github.com/vidavidorra/commitlint-config/actions"><img alt="GitHub workflow status" src="https://img.shields.io/github/workflow/status/vidavidorra/commitlint-config/Lint%20commit%20messages?style=flat-square"></a> | Lint commit messages | GitHub Actions       |
-| <a href="https://github.com/vidavidorra/commitlint-config/actions"><img alt="GitHub workflow status" src="https://img.shields.io/github/workflow/status/vidavidorra/commitlint-config/Build?style=flat-square"></a>                    | Build                | GitHub Actions       |
-| <a href="https://codecov.io/gh/vidavidorra/commitlint-config"><img alt="Code coverage" src="https://img.shields.io/codecov/c/github/vidavidorra/commitlint-config?style=flat-square"></a>                                              | Code coverage        | Codecov              |
-| <a href="https://www.npmjs.com/package/@vidavidorra/commitlint-config"><img alt="npm version" src="https://img.shields.io/npm/v/@vidavidorra/commitlint-config?style=flat-square"></a>                                                 | npm version          | npm                  |
+```shell
+npm install --save-dev @vidavidorra/commitlint-config @commitlint/cli
+```
+
+## Usage
+
+Use this configuration in your project's commitlint configuration by specifying it as item in the `extends` array ([commitlint Shareable configuration](https://commitlint.js.org/#/concepts-shareable-config?id=concept-shareable-configuration)).
+
+> **_Note_**: You may use either just the scope, `@vidavidorra`, or the full path `@vidavidorra/commitlint-config` of the package.
+
+```js
+module.exports = {
+  extends: ['@vidavidorra'],
+};
+```
+
+## Documentation
+
+See [docs/rules](docs/rules.md) for the configured rules.
+
+## Contributing
+
+Please [create an issue](https://github.com/vidavidorra/commitlint-config/issues/new/choose) if you have a bug report, feature proposal or question that does not yet exist.
+
+Please give this project a star ⭐ if you like it and consider becoming a [sponsor](https://github.com/sponsors/jdbruijn) to support this project.
+
+Please refer to the [contributing guide](https://github.com/vidavidorra/CONTRIBUTING.md) detailed information about other contributions, like pull requests.
+
+[![Conventional Commits: 1.0.0](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
+[![Code style](https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier&style=flat-square)](https://github.com/prettier/prettier)
+[![Linting](https://img.shields.io/badge/linting-ESLint-lightgrey.svg?logo=eslint&style=flat-square)](https://eslint.org)
+[![Lint commit messages](https://img.shields.io/github/workflow/status/vidavidorra/commitlint-config/Lint%20commit%20messages?logo=github&label=Lint%20commit%20messages&style=flat-square)](https://github.com/vidavidorra/commitlint-config/actions)
+[![Build](https://img.shields.io/github/workflow/status/vidavidorra/commitlint-config/Build?logo=github&label=Build&style=flat-square)](https://github.com/vidavidorra/commitlint-config/actions)
+
+## Security policy
+
+Please refer to the [Security Policy on GitHub](https://github.com/vidavidorra/commitlint-config/security/) for the security policy.
 
 ## License
 
@@ -47,3 +91,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 The full text of the license is available in the [LICENSE](LICENSE.md) file in this repository and [online](https://www.gnu.org/licenses/gpl.html).
 
 </details>
+
+<!-- References -->
+
+[@commitlint/config-conventional]: https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
