@@ -1,3 +1,26 @@
+### [1.0.13](https://github.com/vidavidorra/commitlint-config/compare/v1.0.12...v1.0.13) (2020-10-18)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v14.11.10 ([#34](https://github.com/vidavidorra/commitlint-config/issues/34)) ([af87ed9](https://github.com/vidavidorra/commitlint-config/commit/af87ed95dab420ca66e1444afcc858dae5d486c8))
+* **deps:** update dependency @types/node to v14.11.7 ([#25](https://github.com/vidavidorra/commitlint-config/issues/25)) ([5339bb0](https://github.com/vidavidorra/commitlint-config/commit/5339bb0039475f0a0b74c197fac2dbe7b50411cd))
+* **deps:** update dependency @types/node to v14.11.8 ([#26](https://github.com/vidavidorra/commitlint-config/issues/26)) ([e15f99c](https://github.com/vidavidorra/commitlint-config/commit/e15f99cc839de7ddcb36705d02ae5256cc2a863c))
+* **deps:** update dependency eslint to v7.11.0 ([#27](https://github.com/vidavidorra/commitlint-config/issues/27)) ([805afad](https://github.com/vidavidorra/commitlint-config/commit/805afad520976b08c83939dca9e4c3c1d8aecddb))
+* **deps:** update dependency eslint-config-prettier to v6.13.0 ([#33](https://github.com/vidavidorra/commitlint-config/issues/33)) ([9f064f4](https://github.com/vidavidorra/commitlint-config/commit/9f064f43c3ba137aade41aa4b7d165037414acb0))
+* **deps:** update dependency lint-staged to v10.4.1 ([#32](https://github.com/vidavidorra/commitlint-config/issues/32)) ([174d9b1](https://github.com/vidavidorra/commitlint-config/commit/174d9b179d04f0cf15e2110d25692cd7fbb734d9))
+* **deps:** update dependency lint-staged to v10.4.2 ([#35](https://github.com/vidavidorra/commitlint-config/issues/35)) ([2ae87a0](https://github.com/vidavidorra/commitlint-config/commit/2ae87a0cc688b3407fc1e6363548c60f4f530893))
+* **deps:** update dependency semantic-release to v17.2.0 ([#29](https://github.com/vidavidorra/commitlint-config/issues/29)) ([b43de6f](https://github.com/vidavidorra/commitlint-config/commit/b43de6fce01fcff545e332bc4ad6bbefc89ea060))
+* **deps:** update dependency semantic-release to v17.2.1 ([#30](https://github.com/vidavidorra/commitlint-config/issues/30)) ([28f7f9d](https://github.com/vidavidorra/commitlint-config/commit/28f7f9d90e20a2c4bb548b90feb24d431d439ca9))
+* **deps:** update jest monorepo to v26.5.3 ([#28](https://github.com/vidavidorra/commitlint-config/issues/28)) ([222d4d4](https://github.com/vidavidorra/commitlint-config/commit/222d4d48985a6d4102ffbd9a52cee278c88c1aeb))
+* **deps:** update typescript-eslint monorepo to v4.4.1 ([#31](https://github.com/vidavidorra/commitlint-config/issues/31)) ([05e5d07](https://github.com/vidavidorra/commitlint-config/commit/05e5d07daa162cb02248f3618d5843120626ba6e))
+* remove ESLint disable before `[@ts-expect-error](https://github.com/ts-expect-error)` comment ([432bca5](https://github.com/vidavidorra/commitlint-config/commit/432bca5d4f430ebbe0e1b0ecf79a75bb4273f337))
+
+
+### Documentation
+
+* add full documentation for this project with my new readme style ([019d596](https://github.com/vidavidorra/commitlint-config/commit/019d59628767714b8df4dc0df10b4752d7be8dc6))
+
 ### [1.0.12](https://github.com/vidavidorra/commitlint-config/compare/v1.0.11...v1.0.12) (2020-10-07)
 
 
