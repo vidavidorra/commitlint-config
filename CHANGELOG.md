@@ -1,3 +1,15 @@
+### [1.0.14](https://github.com/vidavidorra/commitlint-config/compare/v1.0.13...v1.0.14) (2020-10-19)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency codecov/codecov-action to v1.0.14 ([#36](https://github.com/vidavidorra/commitlint-config/issues/36)) ([2abda15](https://github.com/vidavidorra/commitlint-config/commit/2abda15432dd5e82fa3fecfd4195125b095877a5))
+
+
+### Documentation
+
+* fix contributing guide link ([876d95f](https://github.com/vidavidorra/commitlint-config/commit/876d95fc2754c9ec89f8067e0bde170de8a9dc62))
+
 ### [1.0.13](https://github.com/vidavidorra/commitlint-config/compare/v1.0.12...v1.0.13) (2020-10-18)
 
 
