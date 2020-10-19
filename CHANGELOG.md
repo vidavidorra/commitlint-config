@@ -1,3 +1,15 @@
+### [1.0.16](https://github.com/vidavidorra/commitlint-config/compare/v1.0.15...v1.0.16) (2020-10-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commitlint-plugin-function-rules to v1.1.15 ([#39](https://github.com/vidavidorra/commitlint-config/issues/39)) ([205b9b4](https://github.com/vidavidorra/commitlint-config/commit/205b9b43a255061852270f80aa7c1e894a3b82a7))
+
+
+### Miscellaneous Chores
+
+* **deps:** update typescript-eslint monorepo to v4.5.0 ([#38](https://github.com/vidavidorra/commitlint-config/issues/38)) ([157c639](https://github.com/vidavidorra/commitlint-config/commit/157c639ffe3d59b8bfa4f9d16ad4594619a8ff28))
+
 ### [1.0.15](https://github.com/vidavidorra/commitlint-config/compare/v1.0.14...v1.0.15) (2020-10-19)
 
 
