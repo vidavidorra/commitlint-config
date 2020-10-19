@@ -1,3 +1,15 @@
+### [1.0.15](https://github.com/vidavidorra/commitlint-config/compare/v1.0.14...v1.0.15) (2020-10-19)
+
+
+### Miscellaneous Chores
+
+* **deps:** update jest monorepo to v26.6.0 ([#37](https://github.com/vidavidorra/commitlint-config/issues/37)) ([b7eed22](https://github.com/vidavidorra/commitlint-config/commit/b7eed22ead3c5283b5b0ccc054db96052630cd35))
+
+
+### Documentation
+
+* change contributing guide reference wording ([a88483e](https://github.com/vidavidorra/commitlint-config/commit/a88483ed4e6a0f2f5e107c1a264d9a93d91f08fe))
+
 ### [1.0.14](https://github.com/vidavidorra/commitlint-config/compare/v1.0.13...v1.0.14) (2020-10-19)
 
 
