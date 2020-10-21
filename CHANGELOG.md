@@ -1,3 +1,17 @@
+### [1.0.17](https://github.com/vidavidorra/commitlint-config/compare/v1.0.16...v1.0.17) (2020-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commitlint-plugin-function-rules to v1.1.16 ([#42](https://github.com/vidavidorra/commitlint-config/issues/42)) ([b1eaa1e](https://github.com/vidavidorra/commitlint-config/commit/b1eaa1e1a2352b5f9d6f18b15cd16a0716678e16))
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v14.11.11 ([#40](https://github.com/vidavidorra/commitlint-config/issues/40)) ([72f28bd](https://github.com/vidavidorra/commitlint-config/commit/72f28bd93e236b1acac65fc0d88055665b0ba844))
+* **deps:** update dependency @types/node to v14.14.0 ([#41](https://github.com/vidavidorra/commitlint-config/issues/41)) ([ec334c8](https://github.com/vidavidorra/commitlint-config/commit/ec334c8d341359e4e8144a20741b3fb54ba938e0))
+* **deps:** update dependency eslint-config-prettier to v6.14.0 ([#43](https://github.com/vidavidorra/commitlint-config/issues/43)) ([9e93ea7](https://github.com/vidavidorra/commitlint-config/commit/9e93ea7f4accdc1683886cb52a3490d357dd6892))
+
 ### [1.0.16](https://github.com/vidavidorra/commitlint-config/compare/v1.0.15...v1.0.16) (2020-10-19)
 
 
