@@ -41,6 +41,9 @@
     "url": "https://github.com/vidavidorra/commitlint-config/issues"
   },
   "homepage": "https://github.com/vidavidorra/commitlint-config#readme",
+  "engines": {
+    "node": ">=10.22.1"
+  },
   "dependencies": {
     "@commitlint/config-conventional": "11.0.0",
     "@commitlint/types": "11.0.0",
