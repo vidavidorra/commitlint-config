@@ -1,3 +1,14 @@
+### [1.0.19](https://github.com/vidavidorra/commitlint-config/compare/v1.0.18...v1.0.19) (2020-10-24)
+
+### Bug Fixes
+
+- **package:** specify supported node engine to v10 (LTS) ([58a619a](https://github.com/vidavidorra/commitlint-config/commit/58a619ac33016d629d34814da0aaaf06aa7bb4b0))
+
+### Styles
+
+- format changelog and format it during release ([8d224ca](https://github.com/vidavidorra/commitlint-config/commit/8d224cab9a7895c9109582a1506499a174521689))
+- use relative matcin gin ESLint ignore file ([cc9aeed](https://github.com/vidavidorra/commitlint-config/commit/cc9aeedf7799ea0acfe3181f8c4440303673463b))
+
 ### [1.0.18](https://github.com/vidavidorra/commitlint-config/compare/v1.0.17...v1.0.18) (2020-10-24)
 
 ### Bug Fixes
