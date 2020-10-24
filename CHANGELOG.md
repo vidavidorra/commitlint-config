@@ -1,3 +1,19 @@
+### [1.0.18](https://github.com/vidavidorra/commitlint-config/compare/v1.0.17...v1.0.18) (2020-10-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commitlint-plugin-function-rules to v1.1.19 ([#49](https://github.com/vidavidorra/commitlint-config/issues/49)) ([c717bea](https://github.com/vidavidorra/commitlint-config/commit/c717bea81f6f2f1654e84e4ec25ee6bf2cd31fe9))
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v14.14.1 ([#44](https://github.com/vidavidorra/commitlint-config/issues/44)) ([475565a](https://github.com/vidavidorra/commitlint-config/commit/475565a5f94866b545d8f81af0dddc38634bcf27))
+* **deps:** update dependency @types/node to v14.14.2 ([#45](https://github.com/vidavidorra/commitlint-config/issues/45)) ([16fabe2](https://github.com/vidavidorra/commitlint-config/commit/16fabe2ad1f0050594e702649a51158bae15e944))
+* **deps:** update dependency eslint to v7.12.0 ([#48](https://github.com/vidavidorra/commitlint-config/issues/48)) ([eda526d](https://github.com/vidavidorra/commitlint-config/commit/eda526d2dedc62fdd6850bcc9ccd98ee770603c1))
+* **deps:** update dependency ts-jest to v26.4.2 ([#47](https://github.com/vidavidorra/commitlint-config/issues/47)) ([73e201f](https://github.com/vidavidorra/commitlint-config/commit/73e201fbeb4bef7c23c5b3da471da1ef21124deb))
+* **deps:** update jest monorepo to v26.6.1 ([#46](https://github.com/vidavidorra/commitlint-config/issues/46)) ([32852fd](https://github.com/vidavidorra/commitlint-config/commit/32852fd3afec3c9b3dd9216fccb3e538e1c47c7c))
+
 ### [1.0.17](https://github.com/vidavidorra/commitlint-config/compare/v1.0.16...v1.0.17) (2020-10-21)
 
 
