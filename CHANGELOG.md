@@ -1,3 +1,9 @@
+### [1.0.20](https://github.com/vidavidorra/commitlint-config/compare/v1.0.19...v1.0.20) (2020-10-25)
+
+### Documentation
+
+- fix contributing guide link ([4bdcfa1](https://github.com/vidavidorra/commitlint-config/commit/4bdcfa1773e1fe3824668d8ef5a1cad0209bd1b0))
+
 ### [1.0.19](https://github.com/vidavidorra/commitlint-config/compare/v1.0.18...v1.0.19) (2020-10-24)
 
 ### Bug Fixes
