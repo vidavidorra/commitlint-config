@@ -5,7 +5,7 @@ function headerMaxLength(parsed: Commit): RuleOutcome {
     maxLength: 100,
     dependencyCommit: {
       type: /^(chore|fix)$/,
-      scope: /^(peer-)?deps$/,
+      scope: /^(peer-)?deps(-dev)?$/,
       maxLength: 200,
     },
   };
