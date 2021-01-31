@@ -1,3 +1,13 @@
+### [2.1.1](https://github.com/vidavidorra/commitlint-config/compare/v2.1.0...v2.1.1) (2021-01-31)
+
+### Documentation
+
+- add 2021 to license ([792fbb5](https://github.com/vidavidorra/commitlint-config/commit/792fbb582195826ab7bf657da99182dfa78ca49b))
+
+### Continuous Integration
+
+- remove `chore` scope from changelog (generation) ([66f12c2](https://github.com/vidavidorra/commitlint-config/commit/66f12c203b1f0c6120b12ffe66879d32e79f1da1))
+
 ## [2.1.0](https://github.com/vidavidorra/commitlint-config/compare/v2.0.0...v2.1.0) (2021-01-31)
 
 ### Features
