@@ -28,7 +28,14 @@ This configuration is extending [@commitlint/config-conventional][@commitlint/co
     ```
     100
     ```
-  - If `header.type` equals `chore` or `fix` and `header.scope` equals `deps` or `peer-deps`.
+  - If `header` has one of the prefixes listed below.
+    - `chore(deps)`
+    - `fix(deps)`
+    - `chore(peer-deps)`
+    - `chore(deps)`
+    - `build(deps)`
+    - `chore(deps-dev)`
+    - `build(deps-dev)`
     ```
     200
     ```

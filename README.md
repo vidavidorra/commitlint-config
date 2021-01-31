@@ -3,7 +3,7 @@
 [commitlint](https://commitlint.js.org/) configuration extending [@commitlint/config-conventional][@commitlint/config-conventional].
 
 - Based on [@commitlint/config-conventional][@commitlint/config-conventional].
-- Allow longer commit messages headers specifically for dependency management tools like [WhiteSource Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate).
+- Allow longer commit messages headers specifically for dependency management tools like [WhiteSource Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate) and [Dependabot](https://dependabot.com/).
 - No restriction on maximum line length of body and footer.
 
 ---

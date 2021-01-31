@@ -66,13 +66,15 @@ describe('headerMaxLength', () => {
   );
 
   it.each([
-    'chore(deps)',
-    'fix(deps)',
-    'chore(peer-deps)',
-    'chore(deps-dev)',
-    'build(deps-dev)',
+    ['chore(deps)', 'Renovate'],
+    ['fix(deps)', 'Renovate'],
+    ['chore(peer-deps)', 'Renovate (custom rule)'],
+    ['chore(deps)', 'Dependabot'],
+    ['build(deps)', 'Dependabot'],
+    ['chore(deps-dev)', 'Dependabot'],
+    ['build(deps-dev)', 'Dependabot'],
   ])(
-    "succeeds with a short '%s' dependency message",
+    "succeeds with a short '%s' (%s) dependency message",
     async (prefix: string) => {
       const message = await parse(
         `${prefix}: ${messageConfig.dependency}`.padEnd(
@@ -87,28 +89,33 @@ describe('headerMaxLength', () => {
   );
 
   it.each([
-    'chore(deps)',
-    'fix(deps)',
-    'chore(peer-deps)',
-    'chore(deps-dev)',
-    'build(deps-dev)',
-  ])("fails with a long '%s' dependency message", async (prefix: string) => {
-    const message = await parse(
-      `${prefix}: ${messageConfig.dependency}`.padEnd(
-        messageConfig.maxDependencyLength + 1,
-        messageConfig.padding,
-      ),
-    );
-    const expectedResult: RuleOutcome = [
-      false,
-      [
-        'header for dependency commits must not be longer than',
-        `${messageConfig.maxDependencyLength} characters, current length is`,
-        message.raw.length,
-      ].join(' '),
-    ];
-    const result = headerMaxLength(message);
+    ['chore(deps)', 'Renovate'],
+    ['fix(deps)', 'Renovate'],
+    ['chore(peer-deps)', 'Renovate (custom rule)'],
+    ['chore(deps)', 'Dependabot'],
+    ['build(deps)', 'Dependabot'],
+    ['chore(deps-dev)', 'Dependabot'],
+    ['build(deps-dev)', 'Dependabot'],
+  ])(
+    "fails with a long '%s' (%s) dependency message",
+    async (prefix: string) => {
+      const message = await parse(
+        `${prefix}: ${messageConfig.dependency}`.padEnd(
+          messageConfig.maxDependencyLength + 1,
+          messageConfig.padding,
+        ),
+      );
+      const expectedResult: RuleOutcome = [
+        false,
+        [
+          'header for dependency commits must not be longer than',
+          `${messageConfig.maxDependencyLength} characters, current length is`,
+          message.raw.length,
+        ].join(' '),
+      ];
+      const result = headerMaxLength(message);
 
-    expect(result).toEqual(expectedResult);
-  });
+      expect(result).toEqual(expectedResult);
+    },
+  );
 });
