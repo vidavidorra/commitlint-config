@@ -59,7 +59,7 @@ describe('headerMaxLength', () => {
     expect(result).toEqual(expectedResult);
   });
 
-  it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)', 'fix(peer-deps)'])(
+  it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)'])(
     "succeeds with a short '%s' dependency message",
     async (prefix: string) => {
       const message = await parse(
@@ -74,7 +74,7 @@ describe('headerMaxLength', () => {
     },
   );
 
-  it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)', 'fix(peer-deps)'])(
+  it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)'])(
     "fails with a long '%s' dependency message",
     async (prefix: string) => {
       const message = await parse(

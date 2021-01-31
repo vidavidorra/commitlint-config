@@ -30,7 +30,7 @@ function headerMaxLength(parsed: Commit): RuleOutcome {
         },
         {
           name: 'Renovate (custom rule)',
-          type: /^(chore|fix)$/,
+          type: /^chore$/,
           scope: /^peer-deps$/,
         },
       ],
