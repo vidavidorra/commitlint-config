@@ -1,3 +1,9 @@
+## [2.1.0](https://github.com/vidavidorra/commitlint-config/compare/v2.0.0...v2.1.0) (2021-01-31)
+
+### Features
+
+- **header-max-length:** support Dependabot Angular/Conventional Commits ([#145](https://github.com/vidavidorra/commitlint-config/issues/145)) ([fcf54ba](https://github.com/vidavidorra/commitlint-config/commit/fcf54ba97dbb193a748ce2df08a67d18adbcea2c))
+
 ## [2.0.0](https://github.com/vidavidorra/commitlint-config/compare/v1.0.21...v2.0.0) (2021-01-31)
 
 ### ⚠ BREAKING CHANGES
