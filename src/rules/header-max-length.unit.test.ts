@@ -65,8 +65,16 @@ describe('headerMaxLength', () => {
     },
   );
 
-  it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)'])(
-    "succeeds with a short '%s' dependency message",
+  it.each([
+    ['chore(deps)', 'Renovate'],
+    ['fix(deps)', 'Renovate'],
+    ['chore(peer-deps)', 'Renovate (custom rule)'],
+    ['chore(deps)', 'Dependabot'],
+    ['build(deps)', 'Dependabot'],
+    ['chore(deps-dev)', 'Dependabot'],
+    ['build(deps-dev)', 'Dependabot'],
+  ])(
+    "succeeds with a short '%s' (%s) dependency message",
     async (prefix: string) => {
       const message = await parse(
         `${prefix}: ${messageConfig.dependency}`.padEnd(
@@ -80,8 +88,16 @@ describe('headerMaxLength', () => {
     },
   );
 
-  it.each(['chore(deps)', 'fix(deps)', 'chore(peer-deps)'])(
-    "fails with a long '%s' dependency message",
+  it.each([
+    ['chore(deps)', 'Renovate'],
+    ['fix(deps)', 'Renovate'],
+    ['chore(peer-deps)', 'Renovate (custom rule)'],
+    ['chore(deps)', 'Dependabot'],
+    ['build(deps)', 'Dependabot'],
+    ['chore(deps-dev)', 'Dependabot'],
+    ['build(deps-dev)', 'Dependabot'],
+  ])(
+    "fails with a long '%s' (%s) dependency message",
     async (prefix: string) => {
       const message = await parse(
         `${prefix}: ${messageConfig.dependency}`.padEnd(

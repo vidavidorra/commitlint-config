@@ -8,7 +8,7 @@ module.exports = {
             maxLength: 100,
             dependencyCommit: {
               type: /^(chore|fix)/,
-              scope: /^(peer-)?deps$/,
+              scope: /^(peer-)?deps?$/,
               maxLength: 200,
             },
           };
