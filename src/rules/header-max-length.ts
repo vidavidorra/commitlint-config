@@ -1,43 +1,73 @@
 import { Commit, RuleOutcome } from '@commitlint/types';
 
+interface Config {
+  maxLength: number;
+  dependency: {
+    maxLength: number;
+    commitStyle: {
+      name: string;
+      type: RegExp;
+      scope: RegExp;
+    }[];
+  };
+}
+
 function headerMaxLength(parsed: Commit): RuleOutcome {
-  const config = {
+  const config: Readonly<Config> = {
     maxLength: 100,
-    dependencyCommit: {
-      type: /^(chore|fix)$/,
-      scope: /^(peer-)?deps$/,
+    dependency: {
       maxLength: 200,
+      commitStyle: [
+        {
+          name: 'Renovate',
+          type: /^fix$/,
+          scope: /^deps$/,
+        },
+        {
+          name: 'Renovate',
+          type: /^chore$/,
+          scope: /^deps$/,
+        },
+        {
+          name: 'Renovate (custom rule)',
+          type: /^chore$/,
+          scope: /^peer-deps$/,
+        },
+      ],
     },
   };
 
-  const length = parsed.header.length;
-  const isDepsCommit =
-    parsed.type !== null &&
-    config.dependencyCommit.type.test(parsed.type) &&
-    parsed.scope !== null &&
-    config.dependencyCommit.scope.test(parsed.scope);
-
-  if (length <= config.maxLength) {
+  if (parsed.header.length <= config.maxLength) {
     return [true];
   }
 
-  if (!isDepsCommit && length > config.maxLength) {
+  const isDependencyCommit = config.dependency.commitStyle.some(
+    (e) =>
+      parsed.type !== null &&
+      e.type.test(parsed.type) &&
+      parsed.scope !== null &&
+      e.scope.test(parsed.scope),
+  );
+  if (!isDependencyCommit && parsed.header.length > config.maxLength) {
     return [
       false,
       [
-        `header must not be longer than ${config.maxLength}`,
-        `characters, current length is ${length}`,
+        `header must not be longer than ${config.maxLength} characters,`,
+        `current length is ${parsed.header.length}`,
       ].join(' '),
     ];
   }
 
-  if (isDepsCommit && length > config.dependencyCommit.maxLength) {
+  if (
+    isDependencyCommit &&
+    parsed.header.length > config.dependency.maxLength
+  ) {
     return [
       false,
       [
-        `header for dependency commits must not be longer than`,
-        `${config.dependencyCommit.maxLength} characters, current`,
-        `length is ${length}`,
+        'header for dependency commits must not be longer than',
+        `${config.dependency.maxLength} characters, current length is`,
+        parsed.header.length,
       ].join(' '),
     ];
   }
