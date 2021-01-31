@@ -41,7 +41,7 @@ module.exports = {
      * the exact location is shown below. The only change to the types array is
      * whether some types are hidden or not.
      *
-     * https://github.com/conventional-changelog/conventional-changelog/blob/conventional-changelog-conventionalcommits%404.3.1/packages/conventional-changelog-conventionalcommits/writer-opts.js#L160
+     * https://github.com/conventional-changelog/conventional-changelog/blob/conventional-changelog-conventionalcommits%404.5.0/packages/conventional-changelog-conventionalcommits/writer-opts.js#L169
      */
     types: [
       { type: 'feat', section: 'Features' },
@@ -50,7 +50,7 @@ module.exports = {
       { type: 'revert', section: 'Reverts' },
       { type: 'docs', section: 'Documentation' },
       { type: 'style', section: 'Styles' },
-      { type: 'chore', section: 'Miscellaneous Chores' },
+      { type: 'chore', section: 'Miscellaneous Chores', hidden: true },
       { type: 'refactor', section: 'Code Refactoring' },
       { type: 'test', section: 'Tests' },
       { type: 'build', section: 'Build System' },
