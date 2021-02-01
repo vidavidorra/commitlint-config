@@ -1,3 +1,9 @@
+### [2.1.2](https://github.com/vidavidorra/commitlint-config/compare/v2.1.1...v2.1.2) (2021-02-01)
+
+### Build System
+
+- set `esModuleInterop` to `true` to fix `@commitlint/types` import ([32fb415](https://github.com/vidavidorra/commitlint-config/commit/32fb4156c306f7a34a90f1a90b0340d7f3b7bef7))
+
 ### [2.1.1](https://github.com/vidavidorra/commitlint-config/compare/v2.1.0...v2.1.1) (2021-01-31)
 
 ### Documentation
