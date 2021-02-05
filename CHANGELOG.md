@@ -1,3 +1,9 @@
+### [2.1.3](https://github.com/vidavidorra/commitlint-config/compare/v2.1.2...v2.1.3) (2021-02-05)
+
+### Documentation
+
+- **rules:** update `function-rules/header-max-length` example with commitlint execution ([b1441ca](https://github.com/vidavidorra/commitlint-config/commit/b1441ca133f0823fee3b5989115dd0f49eda387e))
+
 ### [2.1.2](https://github.com/vidavidorra/commitlint-config/compare/v2.1.1...v2.1.2) (2021-02-01)
 
 ### Build System
