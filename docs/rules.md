@@ -23,32 +23,34 @@ This configuration is extending [@commitlint/config-conventional][@commitlint/co
 - **level:** `error`.
 - **rule:** `always`.
 - **value**  
-  The value is dependent on the commit header and can have the following values.
+  The value is dependent on the commit header and has the following values.
   - Default.
     ```
     100
     ```
   - If `header` has one of the prefixes listed below.
-    - `chore(deps)`
-    - `fix(deps)`
-    - `chore(peer-deps)`
-    - `chore(deps)`
-    - `build(deps)`
-    - `chore(deps-dev)`
-    - `build(deps-dev)`
+    - `chore(deps):`
+    - `fix(deps):`
+    - `chore(peer-deps):`
+    - `chore(deps):`
+    - `build(deps):`
+    - `chore(deps-dev):`
+    - `build(deps-dev):`
     ```
     200
     ```
 
+A few examples with this rule:
+
 ```shell
-$ echo 'chore: Knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore'  # passes
-$ echo 'chore: Knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore, V for Vendetta'  # fails
+$ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore' | npx --no-install commitlint  # passes
+$ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore, V for Vendetta' | npx --no-install commitlint  # fails
 
-$ echo 'chore(deps): We are told to remember the idea, not the man, because a man can fail. He can be caught, he can be killed and forgotten, but 400 years later, an idea can still change the world.'  # passes
-$ echo 'chore(deps): We are told to remember the idea, not the man, because a man can fail. He can be caught, he can be killed and forgotten, but 400 years later, an idea can still change the world. - Alan Moore'  # fails
+$ echo 'chore(deps): we are told to remember the idea, not the man, because a man can fail. He can be caught, he can be killed and forgotten, but 400 years later, an idea can still change the world' | npx --no-install commitlint  # passes
+$ echo 'chore(deps): we are told to remember the idea, not the man, because a man can fail. He can be caught, he can be killed and forgotten, but 400 years later, an idea can still change the world. - Alan Moore' | npx --no-install commitlint  # fails
 
-$ echo 'chore(peer-deps): We are told to remember the idea, not the man, because a man can fail. He can be caught, he can be killed and forgotten, but 400 years later, an idea can still change the world.'  # passes
-$ echo 'chore(peer-deps): We are told to remember the idea, not the man, because a man can fail. He can be caught, he can be killed and forgotten, but 400 years later, an idea can still change the world. - Alan Moore'  # fails
+$ echo 'chore(peer-deps): we are told to remember the idea, not the man, because a man can fail. He can be caught, he can be killed and forgotten, but 400 years later, an idea can still change the world' | npx --no-install commitlint  # passes
+$ echo 'chore(peer-deps): we are told to remember the idea, not the man, because a man can fail. He can be caught, he can be killed and forgotten, but 400 years later, an idea can still change the world. - Alan Moore' | npx --no-install commitlint  # fails
 ```
 
 <!-- References -->
