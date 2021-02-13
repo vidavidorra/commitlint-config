@@ -1,3 +1,9 @@
+### [2.1.4](https://github.com/vidavidorra/commitlint-config/compare/v2.1.3...v2.1.4) (2021-02-13)
+
+### Bug Fixes
+
+- move husky configuration to shell scripts, as per husky v5 documentation ([4a28aae](https://github.com/vidavidorra/commitlint-config/commit/4a28aae8f8755e9539bcaf8b23ff206ebcd29c85))
+
 ### [2.1.3](https://github.com/vidavidorra/commitlint-config/compare/v2.1.2...v2.1.3) (2021-02-05)
 
 ### Documentation
