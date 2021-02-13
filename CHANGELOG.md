@@ -1,3 +1,9 @@
+### [2.1.6](https://github.com/vidavidorra/commitlint-config/compare/v2.1.5...v2.1.6) (2021-02-13)
+
+### Continuous Integration
+
+- **renovate:** use shared configuration from `vidavidorra/.github` ([ef7634d](https://github.com/vidavidorra/commitlint-config/commit/ef7634d50c1f25cd3c9ef075cf1e655032c39bf7))
+
 ### [2.1.5](https://github.com/vidavidorra/commitlint-config/compare/v2.1.4...v2.1.5) (2021-02-13)
 
 ### Tests
