@@ -5,6 +5,7 @@ import rules from './rules';
 describe('commitlint plugin function rules', () => {
   it("exports a CommonJS module with 'rules' object", () => {
     expect(config.rules).not.toBeUndefined();
+    expect(typeof config.rules).toEqual('object');
   });
 
   it("extends the '@commitlint/config-conventional' config", () => {
