@@ -1,3 +1,9 @@
+### [2.1.5](https://github.com/vidavidorra/commitlint-config/compare/v2.1.4...v2.1.5) (2021-02-13)
+
+### Tests
+
+- add check to CommonJS module export to be an object ([421e71e](https://github.com/vidavidorra/commitlint-config/commit/421e71e665cb1089ea54613ec9fa016682fe1f0a))
+
 ### [2.1.4](https://github.com/vidavidorra/commitlint-config/compare/v2.1.3...v2.1.4) (2021-02-13)
 
 ### Bug Fixes
