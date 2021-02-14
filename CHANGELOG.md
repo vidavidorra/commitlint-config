@@ -1,3 +1,9 @@
+### [2.1.7](https://github.com/vidavidorra/commitlint-config/compare/v2.1.6...v2.1.7) (2021-02-14)
+
+### Build System
+
+- remove `postinstall` script from the published package ([41f0766](https://github.com/vidavidorra/commitlint-config/commit/41f0766f722854641e1e02522943f2e94856c617))
+
 ### [2.1.6](https://github.com/vidavidorra/commitlint-config/compare/v2.1.5...v2.1.6) (2021-02-13)
 
 ### Continuous Integration
