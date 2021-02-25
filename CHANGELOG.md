@@ -1,3 +1,9 @@
+### [2.1.9](https://github.com/vidavidorra/commitlint-config/compare/v2.1.8...v2.1.9) (2021-02-25)
+
+### Continuous Integration
+
+- **renovate:** group commitlint develop- and dependencies separately ([e386086](https://github.com/vidavidorra/commitlint-config/commit/e3860861f92bf90863f9dd7344b8696b5d4b1705))
+
 ### [2.1.8](https://github.com/vidavidorra/commitlint-config/compare/v2.1.7...v2.1.8) (2021-02-17)
 
 ### Bug Fixes
