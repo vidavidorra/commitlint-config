@@ -7,6 +7,18 @@
       "packagePatterns": ["^@commitlint/(lint|load)\\-(9|10)\\.x"],
       "depTypeList": ["devDependencies"],
       "enabled": false
+    },
+    {
+      "description": "Group commitlint develop dependencies",
+      "packagePatterns": ["^@commitlint/"],
+      "depTypeList": ["devDependencies"],
+      "groupName": "devDependencies commitlint monorepo"
+    },
+    {
+      "description": "Group commitlint dependencies",
+      "packagePatterns": ["^@commitlint/"],
+      "depTypeList": ["dependencies"],
+      "groupName": "dependencies commitlint monorepo"
     }
   ]
 }
