@@ -9,16 +9,9 @@
       "enabled": false
     },
     {
-      "description": "Group commitlint develop dependencies",
+      "description": "Update commitlint monorepo with fix type",
       "packagePatterns": ["^@commitlint/"],
-      "depTypeList": ["devDependencies"],
-      "groupName": "devDependencies commitlint monorepo"
-    },
-    {
-      "description": "Group commitlint dependencies",
-      "packagePatterns": ["^@commitlint/"],
-      "depTypeList": ["dependencies"],
-      "groupName": "dependencies commitlint monorepo"
+      "semanticCommitType": "fix"
     }
   ]
 }
