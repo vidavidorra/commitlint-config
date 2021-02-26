@@ -48,8 +48,8 @@
     "node": ">=10.22.1"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "11.0.0",
-    "@commitlint/types": "11.0.0",
+    "@commitlint/config-conventional": "12.0.0",
+    "@commitlint/types": "12.0.0",
     "commitlint-plugin-function-rules": "1.1.23"
   },
   "devDependencies": {
