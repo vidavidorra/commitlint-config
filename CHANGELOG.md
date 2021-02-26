@@ -1,3 +1,9 @@
+### [2.1.10](https://github.com/vidavidorra/commitlint-config/compare/v2.1.9...v2.1.10) (2021-02-26)
+
+### Continuous Integration
+
+- **renovate:** update commitlint monorepo dependencies with fix type ([713e488](https://github.com/vidavidorra/commitlint-config/commit/713e4883bac22b7e61e2bce25238c5263c22af63))
+
 ### [2.1.9](https://github.com/vidavidorra/commitlint-config/compare/v2.1.8...v2.1.9) (2021-02-25)
 
 ### Continuous Integration
