@@ -1,3 +1,9 @@
+### [2.1.11](https://github.com/vidavidorra/commitlint-config/compare/v2.1.10...v2.1.11) (2021-02-26)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v12 (major) ([#174](https://github.com/vidavidorra/commitlint-config/issues/174)) ([1ce05b5](https://github.com/vidavidorra/commitlint-config/commit/1ce05b581f13bb6b275734886f8b830eb27de6ee))
+
 ### [2.1.10](https://github.com/vidavidorra/commitlint-config/compare/v2.1.9...v2.1.10) (2021-02-26)
 
 ### Continuous Integration
