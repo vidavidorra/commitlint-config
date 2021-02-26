@@ -1,3 +1,9 @@
+### [2.1.12](https://github.com/vidavidorra/commitlint-config/compare/v2.1.11...v2.1.12) (2021-02-26)
+
+### Bug Fixes
+
+- move @commitlint/types dependency to dev dependencies ([d3cef7e](https://github.com/vidavidorra/commitlint-config/commit/d3cef7e1415069f5f808346daf0763748fde3af3)), closes [#171](https://github.com/vidavidorra/commitlint-config/issues/171)
+
 ### [2.1.11](https://github.com/vidavidorra/commitlint-config/compare/v2.1.10...v2.1.11) (2021-02-26)
 
 ### Bug Fixes
