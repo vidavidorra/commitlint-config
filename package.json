@@ -49,7 +49,6 @@
   },
   "dependencies": {
     "@commitlint/config-conventional": "12.0.0",
-    "@commitlint/types": "12.0.0",
     "commitlint-plugin-function-rules": "1.1.23"
   },
   "devDependencies": {
@@ -62,6 +61,7 @@
     "@commitlint/load-11.x": "npm:@commitlint/load@11.0.0",
     "@commitlint/load-12.x": "npm:@commitlint/load@12.0.0",
     "@commitlint/load-9.x": "npm:@commitlint/load@9.1.2",
+    "@commitlint/types": "12.0.0",
     "@jest/globals": "26.6.2",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/exec": "5.0.0",
