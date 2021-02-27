@@ -1,3 +1,13 @@
+### [2.1.13](https://github.com/vidavidorra/commitlint-config/compare/v2.1.12...v2.1.13) (2021-02-27)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v12.0.1 ([6af6c36](https://github.com/vidavidorra/commitlint-config/commit/6af6c36218aa46c63520111ac155f3ceb01a329f))
+
+### Styles
+
+- add ESLint ignore file to enable linting of dotfiles ([17eb5eb](https://github.com/vidavidorra/commitlint-config/commit/17eb5eb9db31b17745b697319973aecce9c2bf59))
+
 ### [2.1.12](https://github.com/vidavidorra/commitlint-config/compare/v2.1.11...v2.1.12) (2021-02-26)
 
 ### Bug Fixes
