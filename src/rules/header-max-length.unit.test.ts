@@ -3,17 +3,9 @@ import { RuleOutcome } from '@commitlint/types';
 import headerMaxLength from './header-max-length';
 import parse from '@commitlint/parse';
 
-interface MessageConfig {
-  regular: string;
-  dependency: string;
-  padding: string;
-  maxLength: number;
-  maxDependencyLength: number;
-}
-
 describe('headerMaxLength', () => {
   const successResult: RuleOutcome = [true];
-  const messageConfig: Readonly<MessageConfig> = {
+  const messageConfig = {
     regular: [
       'Knowledge, like air, is vital to life. Like air, no one should be',
       'denied it.',
@@ -26,7 +18,7 @@ describe('headerMaxLength', () => {
     padding: '*',
     maxLength: 100,
     maxDependencyLength: 200,
-  };
+  } as const;
 
   it.each(['chore', 'fix'])(
     "succeeds with a short '%s' message",
@@ -68,7 +60,6 @@ describe('headerMaxLength', () => {
   it.each([
     ['chore(deps)', 'Renovate'],
     ['fix(deps)', 'Renovate'],
-    ['chore(peer-deps)', 'Renovate (custom rule)'],
     ['chore(deps)', 'Dependabot'],
     ['build(deps)', 'Dependabot'],
     ['chore(deps-dev)', 'Dependabot'],
@@ -91,7 +82,6 @@ describe('headerMaxLength', () => {
   it.each([
     ['chore(deps)', 'Renovate'],
     ['fix(deps)', 'Renovate'],
-    ['chore(peer-deps)', 'Renovate (custom rule)'],
     ['chore(deps)', 'Dependabot'],
     ['build(deps)', 'Dependabot'],
     ['chore(deps-dev)', 'Dependabot'],

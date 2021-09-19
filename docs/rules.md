@@ -29,13 +29,11 @@ This configuration is extending [@commitlint/config-conventional][@commitlint/co
     100
     ```
   - If `header` has one of the prefixes listed below.
-    - `chore(deps):`
-    - `fix(deps):`
-    - `chore(peer-deps):`
-    - `chore(deps):`
-    - `build(deps):`
-    - `chore(deps-dev):`
-    - `build(deps-dev):`
+    - `chore(deps)`, for [Renovate][renovate] and [Dependabot][dependabot].
+    - `fix(deps)`, for [Renovate][renovate].
+    - `build(deps)`, for [Dependabot][dependabot].
+    - `chore(deps-dev)`, for [Dependabot][dependabot].
+    - `build(deps-dev)`, for [Dependabot][dependabot].
     ```
     200
     ```
@@ -56,3 +54,5 @@ $ echo 'chore(peer-deps): we are told to remember the idea, not the man, because
 <!-- References -->
 
 [@commitlint/config-conventional]: https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
+[renovate]: https://renovatebot.com
+[dependabot]: https://dependabot.com

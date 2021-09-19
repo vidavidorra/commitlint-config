@@ -24,18 +24,14 @@ function headerMaxLength(parsed: Commit): RuleOutcome {
           scope: /^deps$/,
         },
         {
-          name: 'Renovate (custom rule)',
-          type: /^chore$/,
-          scope: /^peer-deps$/,
-        },
-        {
           name: 'Dependabot (Angular/Conventional Commits)',
-          type: /^(chore|build)$/,
           /**
-           * References for the scope style used by Dependabot.
-           * - https://github.com/dependabot/dependabot-core/blob/v0.130.3/common/lib/dependabot/pull_request_creator/pr_name_prefixer.rb#L125-L127
-           * - https://github.com/dependabot/dependabot-core/blob/v0.130.3/common/lib/dependabot/pull_request_creator/pr_name_prefixer.rb#L114
+           * References for the commit message used by Dependabot.
+           * - https://github.com/dependabot/dependabot-core/blob/v0.162.0/common/lib/dependabot/pull_request_creator/pr_name_prefixer.rb#L125-L127
+           * - https://github.com/dependabot/dependabot-core/blob/v0.162.0/common/lib/dependabot/pull_request_creator/pr_name_prefixer.rb#L114
+           * - https://github.com/dependabot/dependabot-core/blob/v0.162.0/common/lib/dependabot/pull_request_creator/pr_name_prefixer.rb#L229-L234
            */
+          type: /^(chore|build)$/,
           scope: /^deps(-dev)?$/,
         },
       ],
