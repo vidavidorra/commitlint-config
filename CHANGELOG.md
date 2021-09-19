@@ -1,3 +1,31 @@
+## [3.0.0](https://github.com/vidavidorra/commitlint-config/compare/v2.1.16...v3.0.0) (2021-09-19)
+
+### ⚠ BREAKING CHANGES
+
+- **header-max-length:** remove support for `chore(peer-deps)` commit message
+- drop support for node 10
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v13 ([4934d49](https://github.com/vidavidorra/commitlint-config/commit/4934d492adbcca22838e24a3059a68729903a129))
+- **header-max-length:** remove support for `chore(peer-deps)` commit message ([5d9de55](https://github.com/vidavidorra/commitlint-config/commit/5d9de55bafe015b843bb8dedd9e151e54b4a5aad))
+
+### Tests
+
+- add tests for commitlint v13 ([72df5b8](https://github.com/vidavidorra/commitlint-config/commit/72df5b8dccb02f2c486d16e237ca1c880af39a53))
+
+### Continuous Integration
+
+- **renovate:** disable for commitlint v12 final version ([e0fab73](https://github.com/vidavidorra/commitlint-config/commit/e0fab73781e80a7ad356fdd03aafd5f34397bb05))
+
+### Build System
+
+- drop support for node 10 ([9772b5c](https://github.com/vidavidorra/commitlint-config/commit/9772b5c2d8f49a8b802bd71e1afb42b05e050ee0))
+
+### Code Refactoring
+
+- **header-max-length:** combine `chore` and `fix` type into a single regex ([26fd286](https://github.com/vidavidorra/commitlint-config/commit/26fd286d721b6100bd42198311d082fe1123cf63))
+
 ### [2.1.16](https://github.com/vidavidorra/commitlint-config/compare/v2.1.15...v2.1.16) (2021-05-16)
 
 ### Bug Fixes
