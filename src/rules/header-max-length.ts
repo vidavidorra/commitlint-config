@@ -20,12 +20,7 @@ function headerMaxLength(parsed: Commit): RuleOutcome {
       commitStyle: [
         {
           name: 'Renovate',
-          type: /^fix$/,
-          scope: /^deps$/,
-        },
-        {
-          name: 'Renovate',
-          type: /^chore$/,
+          type: /^(chore|fix)$/,
           scope: /^deps$/,
         },
         {
