@@ -31,10 +31,10 @@ describe('commitlint configuration', () => {
 
       beforeAll(async () => {
         load = await (await import(`@commitlint/load-${version}`)).default;
-        expect(load).not.toBeUndefined();
+        expect(load).toBeDefined();
 
         lint = await (await import(`@commitlint/lint-${version}`)).default;
-        expect(lint).not.toBeUndefined();
+        expect(lint).toBeDefined();
       });
 
       it('@commitlint/load can load the configuration', async () => {
@@ -76,7 +76,7 @@ describe('commitlint configuration', () => {
           plugins: config.plugins,
         });
 
-        expect(report.valid).toEqual(true);
+        expect(report.valid).toBe(true);
       });
     },
   );

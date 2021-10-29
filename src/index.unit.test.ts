@@ -4,8 +4,8 @@ import rules from './rules';
 
 describe('commitlint plugin function rules', () => {
   it("exports a CommonJS module with 'rules' object", () => {
-    expect(config.rules).not.toBeUndefined();
-    expect(typeof config.rules).toEqual('object');
+    expect(config.rules).toBeDefined();
+    expect(typeof config.rules).toBe('object');
   });
 
   it("extends the '@commitlint/config-conventional' config", () => {
