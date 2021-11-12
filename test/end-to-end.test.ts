@@ -21,7 +21,7 @@ describe('commitlint configuration', () => {
     }
   });
 
-  describe.each(['9.x', '10.x', '11.x', '12.x', '13.x'])(
+  describe.each(['9.x', '10.x', '11.x', '12.x', '13.x', '14.x'])(
     'commitlint v%s',
     (version: string) => {
       /* eslint-disable @typescript-eslint/no-explicit-any */
