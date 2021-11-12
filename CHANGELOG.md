@@ -1,3 +1,17 @@
+## [3.1.0](https://github.com/vidavidorra/commitlint-config/compare/v3.0.4...v3.1.0) (2021-11-12)
+
+### Features
+
+- add support for commitlint v14 ([27afb05](https://github.com/vidavidorra/commitlint-config/commit/27afb05f518bbb2f7b148411239484efdad9adf1))
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo ([82751df](https://github.com/vidavidorra/commitlint-config/commit/82751dfaeb89115ae703c11f6fafdf04ef6050cc))
+
+### Continuous Integration
+
+- **renovate:** disable for commitlint v13 final version ([1bb812e](https://github.com/vidavidorra/commitlint-config/commit/1bb812e57dd9ec2d90592d4631281b9c6efdeebf))
+
 ### [3.0.4](https://github.com/vidavidorra/commitlint-config/compare/v3.0.3...v3.0.4) (2021-11-12)
 
 ### Bug Fixes
