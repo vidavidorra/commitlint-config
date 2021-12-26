@@ -1,3 +1,9 @@
+### [3.1.2](https://github.com/vidavidorra/commitlint-config/compare/v3.1.1...v3.1.2) (2021-12-26)
+
+### Bug Fixes
+
+- **deps:** update dependency commitlint-plugin-function-rules to v1.6.0 ([73ade2d](https://github.com/vidavidorra/commitlint-config/commit/73ade2d9eedab35590ae132c71926fb9a61c49ec))
+
 ### [3.1.1](https://github.com/vidavidorra/commitlint-config/compare/v3.1.0...v3.1.1) (2021-11-12)
 
 ### Bug Fixes
