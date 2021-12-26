@@ -1,3 +1,9 @@
+## [3.2.0](https://github.com/vidavidorra/commitlint-config/compare/v3.1.2...v3.2.0) (2021-12-26)
+
+### Features
+
+- add support for commitlint v15 and v16 ([#197](https://github.com/vidavidorra/commitlint-config/issues/197)) ([19f2041](https://github.com/vidavidorra/commitlint-config/commit/19f20410a85fe52b08575539bd900844519100a5))
+
 ### [3.1.2](https://github.com/vidavidorra/commitlint-config/compare/v3.1.1...v3.1.2) (2021-12-26)
 
 ### Bug Fixes
