@@ -21,63 +21,69 @@ describe('commitlint configuration', () => {
     }
   });
 
-  describe.each(['9.x', '10.x', '11.x', '12.x', '13.x', '14.x'])(
-    'commitlint v%s',
-    (version: string) => {
-      /* eslint-disable @typescript-eslint/no-explicit-any */
-      let load: any;
-      let lint: any;
-      /* eslint-enable @typescript-eslint/no-explicit-any */
+  describe.each([
+    '9.x',
+    '10.x',
+    '11.x',
+    '12.x',
+    '13.x',
+    '14.x',
+    '15.x',
+    '16.x',
+  ])('commitlint v%s', (version: string) => {
+    /* eslint-disable @typescript-eslint/no-explicit-any */
+    let load: any;
+    let lint: any;
+    /* eslint-enable @typescript-eslint/no-explicit-any */
 
-      beforeAll(async () => {
-        load = await (await import(`@commitlint/load-${version}`)).default;
-        expect(load).toBeDefined();
+    beforeAll(async () => {
+      load = await (await import(`@commitlint/load-${version}`)).default;
+      expect(load).toBeDefined();
 
-        lint = await (await import(`@commitlint/lint-${version}`)).default;
-        expect(lint).toBeDefined();
-      });
+      lint = await (await import(`@commitlint/lint-${version}`)).default;
+      expect(lint).toBeDefined();
+    });
 
-      it('@commitlint/load can load the configuration', async () => {
-        /**
-         * `extends` is resolved relative to the configuration file. See the
-         * [`@commitlint/load` documentation page](
-         * https://commitlint.js.org/#/reference-api?id=commitlintload) .
-         */
-        const config = await load(
-          { extends: ['../dist/src/index'] },
-          { file: './test/commitlint-config.js' },
-        );
-
-        expect(Object.keys(config.plugins)).toEqual(['function-rules']);
-        expect(Object.keys(config.rules)).toContain(
-          'function-rules/header-max-length',
-        );
-      });
-
+    it('@commitlint/load can load the configuration', async () => {
       /**
-       * This test isn't fully decoupled as it uses `load` as well as `lint`.
-       * `load` is needed because the loaded config is necessary in order test
-       * whether `lint` can use the configuration.
-       * If both this and the `load` tests fail, fix the `load` test first
-       * before looking into this test.
+       * `extends` is resolved relative to the configuration file. See the
+       * [`@commitlint/load` documentation page](
+       * https://commitlint.js.org/#/reference-api?id=commitlintload) .
        */
-      it('@commitlint/lint uses the configuration', async () => {
-        const config = await load(
-          { extends: ['../dist/src/index'] },
-          { file: './test/commitlint-config.js' },
-        );
+      const config = await load(
+        { extends: ['../dist/src/index'] },
+        { file: './test/commitlint-config.js' },
+      );
 
-        const message = [
-          'we are told to remember the idea, not the man, because a man can',
-          'fail. He can be caught, he can be killed and forgotten, but 400',
-          'years later, an idea can still change the world',
-        ].join(' ');
-        const report = await lint(`chore(deps): ${message}`, config.rules, {
-          plugins: config.plugins,
-        });
+      expect(Object.keys(config.plugins)).toEqual(['function-rules']);
+      expect(Object.keys(config.rules)).toContain(
+        'function-rules/header-max-length',
+      );
+    });
 
-        expect(report.valid).toBe(true);
+    /**
+     * This test isn't fully decoupled as it uses `load` as well as `lint`.
+     * `load` is needed because the loaded config is necessary in order test
+     * whether `lint` can use the configuration.
+     * If both this and the `load` tests fail, fix the `load` test first
+     * before looking into this test.
+     */
+    it('@commitlint/lint uses the configuration', async () => {
+      const config = await load(
+        { extends: ['../dist/src/index'] },
+        { file: './test/commitlint-config.js' },
+      );
+
+      const message = [
+        'we are told to remember the idea, not the man, because a man can',
+        'fail. He can be caught, he can be killed and forgotten, but 400',
+        'years later, an idea can still change the world',
+      ].join(' ');
+      const report = await lint(`chore(deps): ${message}`, config.rules, {
+        plugins: config.plugins,
       });
-    },
-  );
+
+      expect(report.valid).toBe(true);
+    });
+  });
 });
