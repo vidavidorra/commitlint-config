@@ -52,7 +52,7 @@
     "commitlint-plugin-function-rules": "1.6.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.0.0",
+    "@commitlint/cli": "16.0.1",
     "@commitlint/lint-10.x": "npm:@commitlint/lint@10.0.0",
     "@commitlint/lint-11.x": "npm:@commitlint/lint@11.0.0",
     "@commitlint/lint-12.x": "npm:@commitlint/lint@12.1.4",
