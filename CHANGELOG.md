@@ -1,3 +1,9 @@
+### [3.2.2](https://github.com/vidavidorra/commitlint-config/compare/v3.2.1...v3.2.2) (2022-01-12)
+
+### Bug Fixes
+
+- **deps:** update dependency @commitlint/cli to v16.0.2 ([d5b4152](https://github.com/vidavidorra/commitlint-config/commit/d5b4152a4938539b3bd8711fe0f3fc34cb1961d3))
+
 ### [3.2.1](https://github.com/vidavidorra/commitlint-config/compare/v3.2.0...v3.2.1) (2021-12-31)
 
 ### Bug Fixes
