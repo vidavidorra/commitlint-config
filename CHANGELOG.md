@@ -1,3 +1,18 @@
+## [4.0.0](https://github.com/vidavidorra/commitlint-config/compare/v3.2.8...v4.0.0) (2022-05-22)
+
+### ⚠ BREAKING CHANGES
+
+- require Node.js v14 minimum
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v17 ([b92b7fd](https://github.com/vidavidorra/commitlint-config/commit/b92b7fdc69e6b2e4c2de782c736a5227963f4f7f))
+- require Node.js v14 minimum ([c3b3d64](https://github.com/vidavidorra/commitlint-config/commit/c3b3d64b68c5f7b154e8eef5c170e862727bf1d9))
+
+### Tests
+
+- add tests for commitlint v17 ([ce4f140](https://github.com/vidavidorra/commitlint-config/commit/ce4f140bddbbec2528efb1c1cf6a4b70587ecd57))
+
 ### [3.2.8](https://github.com/vidavidorra/commitlint-config/compare/v3.2.7...v3.2.8) (2022-05-17)
 
 ### Bug Fixes
