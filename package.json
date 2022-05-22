@@ -1,6 +1,6 @@
 {
   "name": "@vidavidorra/commitlint-config",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "commitlint configuration.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",

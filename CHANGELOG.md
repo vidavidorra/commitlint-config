@@ -1,3 +1,9 @@
+### [4.0.1](https://github.com/vidavidorra/commitlint-config/compare/v4.0.0...v4.0.1) (2022-05-22)
+
+### Bug Fixes
+
+- **deps:** update dependency commitlint-plugin-function-rules to v1.7.1 ([3ab3e55](https://github.com/vidavidorra/commitlint-config/commit/3ab3e55a0f1eeed0de963dea0ea2d07a0367903a))
+
 ## [4.0.0](https://github.com/vidavidorra/commitlint-config/compare/v3.2.8...v4.0.0) (2022-05-22)
 
 ### ⚠ BREAKING CHANGES
