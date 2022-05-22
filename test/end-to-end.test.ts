@@ -30,6 +30,7 @@ describe('commitlint configuration', () => {
     '14.x',
     '15.x',
     '16.x',
+    '17.x',
   ])('commitlint v%s', (version: string) => {
     /* eslint-disable @typescript-eslint/no-explicit-any */
     let load: any;
