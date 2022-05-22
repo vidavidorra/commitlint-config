@@ -43,7 +43,7 @@
   },
   "homepage": "https://github.com/vidavidorra/commitlint-config#readme",
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "dependencies": {
     "@commitlint/config-conventional": "17.0.0",
