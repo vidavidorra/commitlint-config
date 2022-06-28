@@ -1,3 +1,9 @@
+## [4.0.4](https://github.com/vidavidorra/commitlint-config/compare/v4.0.3...v4.0.4) (2022-06-28)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v17.0.3 ([178e806](https://github.com/vidavidorra/commitlint-config/commit/178e8065753678a225ff3c83f8a85b723a572d2e))
+
 ## [4.0.3](https://github.com/vidavidorra/commitlint-config/compare/v4.0.2...v4.0.3) (2022-06-04)
 
 ### Bug Fixes
