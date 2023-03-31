@@ -1,3 +1,9 @@
+## [4.0.14](https://github.com/vidavidorra/commitlint-config/compare/v4.0.13...v4.0.14) (2023-03-31)
+
+### Bug Fixes
+
+- **deps:** update dependency @commitlint/cli to v17.5.1 ([3830537](https://github.com/vidavidorra/commitlint-config/commit/3830537f7c068f7d7b62a5fa118e6aedb9ebcf28))
+
 ## [4.0.13](https://github.com/vidavidorra/commitlint-config/compare/v4.0.12...v4.0.13) (2023-03-25)
 
 ### Bug Fixes
