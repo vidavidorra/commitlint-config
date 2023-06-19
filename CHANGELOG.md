@@ -1,3 +1,9 @@
+## [4.0.19](https://github.com/vidavidorra/commitlint-config/compare/v4.0.18...v4.0.19) (2023-06-19)
+
+### Continuous Integration
+
+- **renovate:** disable for commitlint v16 final version ([1a61bc7](https://github.com/vidavidorra/commitlint-config/commit/1a61bc706a5955c11694dcd7d33996518b6f71fd))
+
 ## [4.0.18](https://github.com/vidavidorra/commitlint-config/compare/v4.0.17...v4.0.18) (2023-06-02)
 
 ### Bug Fixes
