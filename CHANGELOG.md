@@ -1,3 +1,9 @@
+## [5.0.0-beta.2](https://github.com/vidavidorra/commitlint-config/compare/v5.0.0-beta.1...v5.0.0-beta.2) (2023-06-22)
+
+### Continuous Integration
+
+- include Node.js v20 in testing and drop, almost EOL, v19 ([34b912c](https://github.com/vidavidorra/commitlint-config/commit/34b912c412011b8c5018f184cf9023c6c66f450e))
+
 ## [5.0.0-beta.1](https://github.com/vidavidorra/commitlint-config/compare/v4.0.20...v5.0.0-beta.1) (2023-06-22)
 
 ### ⚠ BREAKING CHANGES
