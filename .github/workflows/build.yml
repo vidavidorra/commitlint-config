@@ -3,82 +3,36 @@ on:
   push:
     branches:
       - main
+      - beta
       - 'renovate/**'
-      - 'github-renovate/**'
   pull_request:
 jobs:
   lint:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Checkout
-        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-      - name: Setup node
-        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
-        with:
-          node-version: 16
-      - name: Install project
-        run: npm ci --ignore-scripts
-      - name: Lint
-        run: npm run lint
+    uses: vidavidorra/.github/.github/workflows/node-lint.yml@831cdfeaf21957af495b3d518c1a877d5ffd3253 # v2.1.1
   build:
-    name: Build (Node.js v${{ matrix.node }})
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
+    name: Build (Node.js ${{ matrix.nodeVersion }})
     strategy:
       fail-fast: false
       matrix:
-        node: [14, 16]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-      - name: Setup node
-        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
-        with:
-          node-version: ${{ matrix.node }}
-      - name: Install project
-        run: npm ci --ignore-scripts
-      - name: Build
-        run: npm run build
+        nodeVersion: [14, 16, 18, 19]
+    uses: vidavidorra/.github/.github/workflows/node-build.yml@831cdfeaf21957af495b3d518c1a877d5ffd3253 # v2.1.1
+    with:
+      nodeVersion: ${{ matrix.nodeVersion }}
   test:
     name: Test (Node.js v${{ matrix.node }})
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
     strategy:
       fail-fast: false
       matrix:
-        node: [14, 16]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-      - name: Setup node
-        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
-        with:
-          node-version: ${{ matrix.node }}
-      - name: Install project
-        run: npm ci --ignore-scripts
-      - name: Test
-        run: npm run test:ci
+        node: [14, 16, 18, 19]
+    uses: vidavidorra/.github/.github/workflows/node-test.yml@831cdfeaf21957af495b3d518c1a877d5ffd3253 # v2.1.1
+    with:
+      nodeVersion: ${{ matrix.node }}
   code-coverage:
+    name: Test coverage
     needs: [lint, build, test]
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Checkout
-        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-      - name: Setup node
-        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
-        with:
-          node-version: 16
-      - name: Install project
-        run: npm ci --ignore-scripts
-      - name: Test
-        run: npm run test:ci
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage/cobertura-coverage.xml
+    uses: vidavidorra/.github/.github/workflows/node-test-coverage.yml@d1af2b300d80b7abc1bda186aa29df55573af9ea # v2.1.0
+    secrets:
+      codecovToken: ${{ secrets.CODECOV_TOKEN }}
   release:
     needs: [lint, build, test, code-coverage]
     runs-on: ubuntu-latest

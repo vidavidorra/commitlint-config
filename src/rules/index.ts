@@ -1,3 +1,1 @@
-import headerMaxLength from './header-max-length';
-
-export default { headerMaxLength };
+export {headerMaxLength} from './header-max-length.js';

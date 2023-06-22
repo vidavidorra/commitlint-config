@@ -1,9 +1,9 @@
-# commitlint configuration
+# [**commitlint**][commitlint] configuration <!-- omit in toc -->
 
-[commitlint](https://commitlint.js.org/) configuration extending [@commitlint/config-conventional][@commitlint/config-conventional].
+[**commitlint**][commitlint] configuration extending [@commitlint/config-conventional][@commitlint/config-conventional].
 
 - Based on [@commitlint/config-conventional][@commitlint/config-conventional].
-- Allow longer commit messages headers specifically for dependency management tools like [WhiteSource Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate) and [Dependabot](https://dependabot.com/).
+- Allow longer commit messages headers specifically for dependency management tools like [Renovate](https://www.mend.io/renovate/) and [Dependabot](https://dependabot.com/).
 - No restriction on maximum line length of body and footer.
 
 ---
@@ -15,10 +15,6 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079?style=flat-square)](https://github.com/semantic-release/semantic-release)
 [![Code coverage](https://img.shields.io/codecov/c/github/vidavidorra/commitlint-config?logo=codecov&style=flat-square)](https://codecov.io/gh/vidavidorra/commitlint-config)
 [![License](https://img.shields.io/github/license/vidavidorra/commitlint-config?style=flat-square)](LICENSE.md)
-
-<a name="toc"></a>
-
-## Table of contents
 
 - [Install](#install)
 - [Usage](#usage)
@@ -35,9 +31,9 @@ npm install --save-dev @vidavidorra/commitlint-config @commitlint/cli
 
 ## Usage
 
-Use this configuration in your project's commitlint configuration by specifying it as item in the `extends` array ([commitlint Shareable configuration](https://commitlint.js.org/#/concepts-shareable-config?id=concept-shareable-configuration)).
+Use this configuration in your project's [**commitlint**][commitlint] configuration by specifying it as item in the `extends` array ([**commitlint** Shareable configuration](https://commitlint.js.org/#/concepts-shareable-config?id=concept-shareable-configuration)).
 
-> **_Note_**: You may use either just the scope, `@vidavidorra`, or the full path `@vidavidorra/commitlint-config` of the package.
+> **Note** You may use either just the scope, `@vidavidorra`, or the full path, `@vidavidorra/commitlint-config`, of the package.
 
 ```js
 module.exports = {
@@ -51,17 +47,13 @@ See [docs/rules](docs/rules.md) for the configured rules.
 
 ## Contributing
 
-Please [create an issue](https://github.com/vidavidorra/commitlint-config/issues/new/choose) if you have a bug report, feature proposal or question that does not yet exist.
-
-Please give this project a star ⭐ if you like it and consider becoming a [sponsor](https://github.com/sponsors/jdbruijn) to support this project.
+Please [create an issue](https://github.com/vidavidorra/commitlint-config/issues/new/choose) if you have a bug report or feature proposal, or [create a discussion](https://github.com/vidavidorra/commitlint-config/discussions) if you have a question. If you like this project, please consider giving it a star ⭐ and/or become a [sponsor](https://github.com/sponsors/jdbruijn) to support my work.
 
 Refer to the [contributing guide](https://github.com/vidavidorra/.github/blob/main/CONTRIBUTING.md) detailed information about other contributions, like pull requests.
 
 [![Conventional Commits: 1.0.0](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow?style=flat-square)](https://conventionalcommits.org)
+[![XO code style](https://shields.io/badge/code_style-5ed9c7?logo=xo&labelColor=gray&style=flat-square)](https://github.com/xojs/xo)
 [![Code style](https://img.shields.io/badge/code_style-Prettier-ff69b4?logo=prettier&style=flat-square)](https://github.com/prettier/prettier)
-[![Linting](https://img.shields.io/badge/linting-ESLint-lightgrey?logo=eslint&style=flat-square)](https://eslint.org)
-[![Lint commit messages](https://img.shields.io/github/workflow/status/vidavidorra/commitlint-config/Lint%20commit%20messages?logo=github&label=Lint%20commit%20messages&style=flat-square)](https://github.com/vidavidorra/commitlint-config/actions)
-[![Build](https://img.shields.io/github/workflow/status/vidavidorra/commitlint-config/Build?logo=github&label=Build&style=flat-square)](https://github.com/vidavidorra/commitlint-config/actions)
 
 ## Security policy
 
@@ -71,7 +63,7 @@ Please refer to the [Security Policy on GitHub](https://github.com/vidavidorra/c
 
 This project is licensed under the [GPLv3 license](https://www.gnu.org/licenses/gpl.html).
 
-Copyright © 2020-2021 Jeroen de Bruijn
+Copyright © 2020-2023 Jeroen de Bruijn
 
 <details><summary>License details.</summary>
 <p>
@@ -95,4 +87,5 @@ The full text of the license is available in the [LICENSE](LICENSE.md) file in t
 
 <!-- References -->
 
+[commitlint]: https://commitlint.js.org/
 [@commitlint/config-conventional]: https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
