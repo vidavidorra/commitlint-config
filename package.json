@@ -193,7 +193,7 @@
   },
   "dependencies": {
     "@commitlint/config-conventional": "17.6.5",
-    "commitlint-plugin-function-rules": "2.0.1"
+    "commitlint-plugin-function-rules": "2.0.2"
   },
   "devDependencies": {
     "@ava/typescript": "4.0.0",
