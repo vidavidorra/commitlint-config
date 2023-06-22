@@ -2,6 +2,8 @@ module.exports = {
   extends: ['@commitlint/config-conventional'],
   plugins: ['commitlint-plugin-function-rules'],
   rules: {
+    'body-max-line-length': [0], // Level: disabled
+    'footer-max-line-length': [0], // Level: disabled
     'header-max-length': [0], // Level: disabled
     'function-rules/header-max-length': [
       2, // Level: error
