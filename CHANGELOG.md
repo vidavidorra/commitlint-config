@@ -1,3 +1,9 @@
+## [5.0.0-beta.3](https://github.com/vidavidorra/commitlint-config/compare/v5.0.0-beta.2...v5.0.0-beta.3) (2023-06-22)
+
+### Bug Fixes
+
+- **deps:** update dependency commitlint-plugin-function-rules to v2.0.1 ([8832c11](https://github.com/vidavidorra/commitlint-config/commit/8832c1103a0fd32079f37e71cf27aa3445d0c302))
+
 ## [5.0.0-beta.2](https://github.com/vidavidorra/commitlint-config/compare/v5.0.0-beta.1...v5.0.0-beta.2) (2023-06-22)
 
 ### Continuous Integration
