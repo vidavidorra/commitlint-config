@@ -1,3 +1,9 @@
+## [5.0.1](https://github.com/vidavidorra/commitlint-config/compare/v5.0.0...v5.0.1) (2023-06-22)
+
+### Continuous Integration
+
+- specify commitlint configuration file ([50a291a](https://github.com/vidavidorra/commitlint-config/commit/50a291aa90b0272d56f8e07f519ab3c8f8d4c5cd))
+
 ## [5.0.0](https://github.com/vidavidorra/commitlint-config/compare/v4.0.20...v5.0.0) (2023-06-22)
 
 ### ⚠ BREAKING CHANGES
