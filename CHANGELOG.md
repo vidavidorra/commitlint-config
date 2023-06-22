@@ -1,3 +1,21 @@
+## [5.0.0-beta.1](https://github.com/vidavidorra/commitlint-config/compare/v4.0.20...v5.0.0-beta.1) (2023-06-22)
+
+### ⚠ BREAKING CHANGES
+
+- drop support for Node.js v14 which is EOL
+
+### Features
+
+- drop support for Node.js v14 which is EOL ([07bba70](https://github.com/vidavidorra/commitlint-config/commit/07bba708a4dfc43eb2e96ac6c56ca5663540d582))
+
+### Code Refactoring
+
+- change to ES module, export is still an CommonJS module as that's required by commitlint ([07f38fe](https://github.com/vidavidorra/commitlint-config/commit/07f38fe78624274902fc8a4bc7ed9d6fa77f2f1d))
+
+### Continuous Integration
+
+- **commitlint:** disable body and footer max line length rules ([1b0d163](https://github.com/vidavidorra/commitlint-config/commit/1b0d163d5709de2351195945ef8969f568ce5e43))
+
 ## [4.0.20](https://github.com/vidavidorra/commitlint-config/compare/v4.0.19...v4.0.20) (2023-06-20)
 
 ### Bug Fixes
