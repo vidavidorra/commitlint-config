@@ -4,15 +4,15 @@
   "packageRules": [
     {
       "description": "Disable updates for aliased @commitlint packages with a final version",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^@commitlint/(lint|load)\\-(9|10|11|12|13|14|15|16)\\.x"
       ],
-      "depTypeList": ["devDependencies"],
+      "matchDepTypes": ["devDependencies"],
       "enabled": false
     },
     {
       "description": "Update commitlint monorepo with fix type",
-      "packagePatterns": ["^@commitlint/"],
+      "matchPackagePatterns": ["^@commitlint/"],
       "semanticCommitType": "fix"
     }
   ]
