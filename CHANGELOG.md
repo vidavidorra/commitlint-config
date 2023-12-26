@@ -1,3 +1,22 @@
+## [6.0.0](https://github.com/vidavidorra/commitlint-config/compare/v5.0.2...v6.0.0) (2023-12-26)
+
+### ⚠ BREAKING CHANGES
+
+- require Node.js 18 minimum
+
+### Features
+
+- require Node.js 18 minimum ([e5c2677](https://github.com/vidavidorra/commitlint-config/commit/e5c2677908fc246b7697c3ce8a073cc96b064c9b))
+
+### Build System
+
+- change module from `ES2022` to `Node16` in TSConfig ([2c83d6e](https://github.com/vidavidorra/commitlint-config/commit/2c83d6ebfe01b1aa45099252c242c53704ed92ba))
+
+### Continuous Integration
+
+- fail `format` scripts on a warning ([00e1192](https://github.com/vidavidorra/commitlint-config/commit/00e11925eecdee8ce9c41abbfc8f74328973342c))
+- rename `build` workflow to `ci-cd` ([7ff7a14](https://github.com/vidavidorra/commitlint-config/commit/7ff7a14f06d461c18ac6cf8fce741b3ebe86b556))
+
 ## [5.0.2](https://github.com/vidavidorra/commitlint-config/compare/v5.0.1...v5.0.2) (2023-06-22)
 
 ### Bug Fixes
