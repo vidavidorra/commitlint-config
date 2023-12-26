@@ -224,7 +224,7 @@
     "c8": "8.0.1",
     "esbuild": "0.19.10",
     "husky": "8.0.3",
-    "lint-staged": "13.2.2",
+    "lint-staged": "15.2.0",
     "prettier": "2.8.8",
     "semantic-release": "21.0.5",
     "typescript": "5.3.3",
