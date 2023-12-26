@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/vidavidorra/commitlint-config/compare/v6.0.0...v6.0.1) (2023-12-26)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v18 ([76a75f0](https://github.com/vidavidorra/commitlint-config/commit/76a75f0cfa4796827645b7a2bf478e36cbb5b2fc))
+- **deps:** update dependency commitlint-plugin-function-rules to v3 ([3ea187a](https://github.com/vidavidorra/commitlint-config/commit/3ea187afb4bdefc6040514090dc8da56d294d3be))
+
 ## [6.0.0](https://github.com/vidavidorra/commitlint-config/compare/v5.0.2...v6.0.0) (2023-12-26)
 
 ### ⚠ BREAKING CHANGES
