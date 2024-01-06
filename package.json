@@ -1,7 +1,7 @@
 {
   "name": "@vidavidorra/commitlint-config",
   "version": "6.0.1",
-  "description": "commitlint configuration.",
+  "description": "commitlint configuration extending @commitlint/config-conventional",
   "keywords": [
     "commitlint",
     "commitlintconfig",
