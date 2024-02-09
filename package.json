@@ -228,7 +228,7 @@
     "prettier": "3.2.5",
     "semantic-release": "23.0.0",
     "typescript": "5.3.3",
-    "xo": "0.56.0"
+    "xo": "0.57.0"
   },
   "engines": {
     "node": ">=18"
