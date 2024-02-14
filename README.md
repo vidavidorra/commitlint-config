@@ -29,6 +29,9 @@
 npm install --save-dev @vidavidorra/commitlint-config @commitlint/cli
 ```
 
+> [!IMPORTANT]
+> Due to the `header-trim` rule addition in [**commitlint**][commitlint] v18.6.0, `@commitlint/cli` should be at least v18.6.0.
+
 ## Usage
 
 Use this configuration in your project's [**commitlint**][commitlint] configuration by specifying it as item in the `extends` array ([**commitlint** Shareable configuration](https://commitlint.js.org/#/concepts-shareable-config?id=concept-shareable-configuration)).

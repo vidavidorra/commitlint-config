@@ -1,6 +1,6 @@
 import test from 'ava';
-import type commitlintLoad from '@commitlint/load-17.x';
-import type commitlintLint from '@commitlint/lint-17.x';
+import type commitlintLoad from '@commitlint/load-18.x';
+import type commitlintLint from '@commitlint/lint-18.x';
 import {type LoadOptions} from '@commitlint/types';
 import {config} from './config.js';
 import {headerMaxLength} from './rules/index.js';
@@ -45,15 +45,7 @@ const loadConfig = test.macro<[string]>({
   title: (_, version) =>
     `@commitlint/load@${version} can load the configuration`,
 });
-test(loadConfig, '9.x');
-test(loadConfig, '10.x');
-test(loadConfig, '11.x');
-test(loadConfig, '12.x');
-test(loadConfig, '13.x');
-test(loadConfig, '14.x');
-test(loadConfig, '15.x');
-test(loadConfig, '16.x');
-test(loadConfig, '17.x');
+test(loadConfig, '18.x');
 
 const lintUsingConfiguration = test.macro<[string]>({
   async exec(t, version) {
@@ -79,12 +71,4 @@ const lintUsingConfiguration = test.macro<[string]>({
   title: (_, version) =>
     `@commitlint/lint@${version} can use the configuration`,
 });
-test(lintUsingConfiguration, '9.x');
-test(lintUsingConfiguration, '10.x');
-test(lintUsingConfiguration, '11.x');
-test(lintUsingConfiguration, '12.x');
-test(lintUsingConfiguration, '13.x');
-test(lintUsingConfiguration, '14.x');
-test(lintUsingConfiguration, '15.x');
-test(lintUsingConfiguration, '16.x');
-test(lintUsingConfiguration, '17.x');
+test(lintUsingConfiguration, '18.x');
