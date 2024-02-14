@@ -33,7 +33,8 @@ npm install --save-dev @vidavidorra/commitlint-config @commitlint/cli
 
 Use this configuration in your project's [**commitlint**][commitlint] configuration by specifying it as item in the `extends` array ([**commitlint** Shareable configuration](https://commitlint.js.org/#/concepts-shareable-config?id=concept-shareable-configuration)).
 
-> **Note** You may use either just the scope, `@vidavidorra`, or the full path, `@vidavidorra/commitlint-config`, of the package.
+> [!TIP]
+> You may use either just the scope, `@vidavidorra`, or the full path, `@vidavidorra/commitlint-config`, of the package.
 
 ```js
 module.exports = {

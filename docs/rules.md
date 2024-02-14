@@ -1,6 +1,6 @@
 # Rules <!-- omit in toc -->
 
-This configuration is extending [@commitlint/config-conventional][@commitlint/config-conventional]. Only the changed and added rules, compared to [@commitlint/config-conventional][@commitlint/config-conventional], are documentend here.
+This configuration is extending [@commitlint/config-conventional][@commitlint/config-conventional]. Only the changed and added rules, compared to [@commitlint/config-conventional][@commitlint/config-conventional], are documented here.
 
 - [`body-max-line-length`](#body-max-line-length)
 - [`footer-max-line-length`](#footer-max-line-length)
@@ -33,8 +33,8 @@ This configuration is extending [@commitlint/config-conventional][@commitlint/co
   The value is dependent on the commit header and has the following values.
 
   - Default.
-    ```ts
-    100;
+    ```json
+    100
     ```
   - If `header` has one of the prefixes listed below.
     - `chore(deps)`, for [**Renovate**][renovate] and [**Dependabot**][dependabot].
@@ -42,22 +42,24 @@ This configuration is extending [@commitlint/config-conventional][@commitlint/co
     - `build(deps)`, for [**Dependabot**][dependabot].
     - `chore(deps-dev)`, for [**Dependabot**][dependabot].
     - `build(deps-dev)`, for [**Dependabot**][dependabot].
-    ```ts
-    200;
+    ```json
+    200
     ```
 
-  A few examples with this rule:
-
-  ```shell
-  $ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore' | npx commitlint  # passes
-  $ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore, V for Vendetta' | npx commitlint  # fails
-
-  $ echo 'chore(deps): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world - A. Moore' | npx commitlint  # passes
-  $ echo 'chore(deps): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world - Alan Moore' | npx commitlint  # fails
-
-  $ echo 'build(deps-dev): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world' | npx commitlint  # passes
-  $ echo 'build(deps-dev): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world - A. Moore' | npx commitlint  # fails
-  ```
+  > [!TIP]
+  > Regular commits have the default header length and fail if the header is too long.
+  >
+  > ```shell
+  > $ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore' | npx commitlint  # passes, 96 characters
+  > $ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore, V for Vendetta' | npx commitlint  # fails, 112 characters
+  > ```
+  >
+  > [**Renovate**][renovate] and [**Dependabot**][dependabot] commits have extended header length.
+  >
+  > ```shell
+  > $ echo 'chore(deps): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world - A. Moore' | npx commitlint # passes, 200 characters
+  > $ echo 'chore(deps): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world - Alan Moore' | npx commitlint # fails, 202 characters
+  > ```
 
 <!-- References -->
 
