@@ -1,3 +1,9 @@
+## [6.0.5](https://github.com/vidavidorra/commitlint-config/compare/v6.0.4...v6.0.5) (2024-02-14)
+
+### Documentation
+
+- simplify header rule examples ([c5ab676](https://github.com/vidavidorra/commitlint-config/commit/c5ab676c67e1a50ccdbdf6d2908fb87b081d5673))
+
 ## [6.0.4](https://github.com/vidavidorra/commitlint-config/compare/v6.0.3...v6.0.4) (2024-02-14)
 
 ### Bug Fixes
