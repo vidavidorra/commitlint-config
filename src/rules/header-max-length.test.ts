@@ -1,6 +1,10 @@
 import test from 'ava';
-import {type Commit} from '@commitlint/types';
-import {config, failedMessage, headerMaxLength} from './header-max-length.js';
+import {
+  type Commit,
+  config,
+  failedMessage,
+  headerMaxLength,
+} from './header-max-length.js';
 
 function commit(
   type: string,
@@ -25,7 +29,7 @@ function commit(
     references: [],
     revert: null,
     merge: null,
-  };
+  } as unknown as Commit;
 }
 
 const outcome = test.macro<
