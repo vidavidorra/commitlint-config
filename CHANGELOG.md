@@ -1,3 +1,9 @@
+## [7.0.2](https://github.com/vidavidorra/commitlint-config/compare/v7.0.1...v7.0.2) (2024-03-25)
+
+### Tests
+
+- **rules:** add cases for two missing branches with defaulting optionals ([58773eb](https://github.com/vidavidorra/commitlint-config/commit/58773eb035e5e19eab2358a393ac7a4f3f67d325))
+
 ## [7.0.1](https://github.com/vidavidorra/commitlint-config/compare/v7.0.0...v7.0.1) (2024-03-25)
 
 ### Bug Fixes
