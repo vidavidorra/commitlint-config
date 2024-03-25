@@ -1,3 +1,19 @@
+## [7.0.0](https://github.com/vidavidorra/commitlint-config/compare/v6.0.5...v7.0.0) (2024-03-25)
+
+### ⚠ BREAKING CHANGES
+
+- **deps:** Drop support for @commitlint v9 up to and indlucing v18
+- **deps:** Require Node.js 20 minimum
+
+### Features
+
+- **deps:** update commitlint monorepo to v19 ([1cfef29](https://github.com/vidavidorra/commitlint-config/commit/1cfef298f652297b158c9a1734412e6f6e74faa5))
+
+### Continuous Integration
+
+- remove tests on Node.js 18 ([8f83ad3](https://github.com/vidavidorra/commitlint-config/commit/8f83ad30cbcfebe9c3f2ec99e9e8e95b65040738))
+- temporary disable `lint-commit-messages` ([d09cc78](https://github.com/vidavidorra/commitlint-config/commit/d09cc7823373d53b5ae43dc132e9dffac6b41909))
+
 ## [7.0.0-beta.2](https://github.com/vidavidorra/commitlint-config/compare/v7.0.0-beta.1...v7.0.0-beta.2) (2024-03-25)
 
 ### Continuous Integration
