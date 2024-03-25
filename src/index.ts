@@ -1,11 +1,15 @@
-import {config} from './config.js';
+import {type UserConfig} from '@commitlint/types';
+import {headerMaxLength} from './rules/index.js';
 
-/**
- * Export single object, according to the CommonJS model. The CommonJS module is
- * explicitly used here as that's the kind of module commitlint requires for
- * shareable configurations. This project is an ES module for ease of
- * development, and thus requires the error for an export assignment to be
- * disabled.
- */
-// @ts-expect-error TS1203
-export = config;
+const config: UserConfig = {
+  extends: ['@commitlint/config-conventional'],
+  plugins: ['function-rules'],
+  rules: {
+    'body-max-line-length': [0],
+    'footer-max-line-length': [0],
+    'header-max-length': [0],
+    'function-rules/header-max-length': [2, 'always', headerMaxLength],
+  },
+};
+
+export default config;

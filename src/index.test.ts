@@ -1,9 +1,15 @@
 import test from 'ava';
-import type commitlintLoad from '@commitlint/load-17.x';
-import type commitlintLint from '@commitlint/lint-17.x';
+import load19x from '@commitlint/load-19.x';
+import lint19x from '@commitlint/lint-19.x';
 import {type LoadOptions} from '@commitlint/types';
-import {config} from './config.js';
 import {headerMaxLength} from './rules/index.js';
+import config from './index.js';
+
+/* eslint-disable @typescript-eslint/naming-convention */
+const versions = {
+  '19.x': {load: load19x, lint: lint19x},
+} as const;
+/* eslint-enable @typescript-eslint/naming-convention */
 
 test('extends the "@commitlint/config-conventional" config', (t) => {
   t.deepEqual(config.extends, ['@commitlint/config-conventional']);
@@ -34,43 +40,24 @@ test(disables, 'header-max-length');
  * configuration.
  */
 const loadOptions: LoadOptions = {file: 'package.json'} as const;
-const loadConfig = test.macro<[string]>({
+const loadConfig = test.macro<[keyof typeof versions]>({
   async exec(t, version) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const module = await import(`@commitlint/load-${version}`);
-    const load = module.default.default as typeof commitlintLoad.default;
-
-    await t.notThrowsAsync(load(config, loadOptions));
+    await t.notThrowsAsync(versions[version].load(config, loadOptions));
   },
   title: (_, version) =>
     `@commitlint/load@${version} can load the configuration`,
 });
-test(loadConfig, '9.x');
-test(loadConfig, '10.x');
-test(loadConfig, '11.x');
-test(loadConfig, '12.x');
-test(loadConfig, '13.x');
-test(loadConfig, '14.x');
-test(loadConfig, '15.x');
-test(loadConfig, '16.x');
-test(loadConfig, '17.x');
+test(loadConfig, '19.x');
 
-const lintUsingConfiguration = test.macro<[string]>({
+const lintUsingConfiguration = test.macro<[keyof typeof versions]>({
   async exec(t, version) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const loadModule = await import(`@commitlint/load-${version}`);
-    const load = loadModule.default.default as typeof commitlintLoad.default;
-    const qualifiedConfig = await load(config, loadOptions);
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const module = await import(`@commitlint/lint-${version}`);
-    const lint = module.default.default as typeof commitlintLint.default;
-
+    const qualifiedConfig = await versions[version].load(config, loadOptions);
     const input = [
       'chore(deps): we are told to remember the idea, not the man. Because a',
       'man can fail. He can be caught, he can be killed and forgotten. But 400',
       'years later, an idea can still change the world - A. Moore',
     ].join(' ');
-    const outcome = await lint(input, qualifiedConfig.rules, {
+    const outcome = await versions[version].lint(input, qualifiedConfig.rules, {
       plugins: qualifiedConfig.plugins,
     });
 
@@ -79,12 +66,4 @@ const lintUsingConfiguration = test.macro<[string]>({
   title: (_, version) =>
     `@commitlint/lint@${version} can use the configuration`,
 });
-test(lintUsingConfiguration, '9.x');
-test(lintUsingConfiguration, '10.x');
-test(lintUsingConfiguration, '11.x');
-test(lintUsingConfiguration, '12.x');
-test(lintUsingConfiguration, '13.x');
-test(lintUsingConfiguration, '14.x');
-test(lintUsingConfiguration, '15.x');
-test(lintUsingConfiguration, '16.x');
-test(lintUsingConfiguration, '17.x');
+test(lintUsingConfiguration, '19.x');

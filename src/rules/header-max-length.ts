@@ -1,4 +1,6 @@
-import {type Commit, type RuleOutcome} from '@commitlint/types';
+import {type Rule, type RuleOutcome} from '@commitlint/types';
+
+type Commit = Parameters<Rule>[0];
 
 const config = {
   maxLength: 100,
@@ -34,25 +36,24 @@ function failedMessage(dependency: boolean, length: number): string {
 }
 
 function headerMaxLength(parsed: Commit): RuleOutcome {
-  if (parsed.header.length <= config.maxLength) {
+  const headerLength = parsed.header?.length ?? 0;
+  if (headerLength <= config.maxLength) {
     return [true];
   }
 
   const isDependencyCommit = config.dependency.commitStyle.some(
     (commitStyle) =>
-      parsed.type !== null &&
-      commitStyle.type.test(parsed.type) &&
-      parsed.scope !== null &&
-      commitStyle.scope.test(parsed.scope),
+      commitStyle.type.test(parsed.type ?? '') &&
+      commitStyle.scope.test(parsed.scope ?? ''),
   );
   const maxLength = isDependencyCommit
     ? config.dependency.maxLength
     : config.maxLength;
-  if (parsed.header.length > maxLength) {
-    return [false, failedMessage(isDependencyCommit, parsed.header.length)];
+  if (headerLength > maxLength) {
+    return [false, failedMessage(isDependencyCommit, headerLength)];
   }
 
   return [true];
 }
 
-export {config, failedMessage, headerMaxLength};
+export {type Commit, config, failedMessage, headerMaxLength};
