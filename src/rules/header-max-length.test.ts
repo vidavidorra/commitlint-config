@@ -71,3 +71,18 @@ test(outcome, false, 'chore', 'deps', 'Dependabot', maxDepsLength + 1);
 test(outcome, false, 'build', 'deps', 'Dependabot', maxDepsLength + 1);
 test(outcome, false, 'chore', 'deps-dev', 'Dependabot', maxDepsLength + 1);
 test(outcome, false, 'build', 'deps-dev', 'Dependabot', maxDepsLength + 1);
+
+test('uses zero header length when "parsed.header" is "null"', (t) => {
+  const parsed = commit('', undefined, config.maxLength + 1);
+  parsed.header = null;
+  t.deepEqual(headerMaxLength(parsed), [true]);
+});
+
+test('uses empty string when "parsed.type" is "undefined"', (t) => {
+  const parsed = commit('', undefined, config.maxLength + 1);
+  delete parsed.type;
+  t.deepEqual(headerMaxLength(parsed), [
+    false,
+    failedMessage(false, config.maxLength + 1),
+  ]);
+});
