@@ -1,3 +1,14 @@
+## [7.0.0-beta.1](https://github.com/vidavidorra/commitlint-config/compare/v6.0.5...v7.0.0-beta.1) (2024-03-25)
+
+### ⚠ BREAKING CHANGES
+
+- **deps:** Drop support for @commitlint v9 up to and indlucing v18
+- **deps:** Require Node.js 20 minimum
+
+### Features
+
+- **deps:** update commitlint monorepo to v19 ([1cfef29](https://github.com/vidavidorra/commitlint-config/commit/1cfef298f652297b158c9a1734412e6f6e74faa5))
+
 ## [6.0.5](https://github.com/vidavidorra/commitlint-config/compare/v6.0.4...v6.0.5) (2024-02-14)
 
 ### Documentation
