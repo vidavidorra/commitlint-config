@@ -1,3 +1,9 @@
+## [7.0.3](https://github.com/vidavidorra/commitlint-config/compare/v7.0.2...v7.0.3) (2024-03-26)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo ([cc3ac78](https://github.com/vidavidorra/commitlint-config/commit/cc3ac7892180f261987ea1ca2f82d5950c52f5f5))
+
 ## [7.0.2](https://github.com/vidavidorra/commitlint-config/compare/v7.0.1...v7.0.2) (2024-03-25)
 
 ### Tests
