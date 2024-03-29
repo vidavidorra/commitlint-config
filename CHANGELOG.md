@@ -1,3 +1,9 @@
+## [7.0.4](https://github.com/vidavidorra/commitlint-config/compare/v7.0.3...v7.0.4) (2024-03-29)
+
+### Reverts
+
+- "ci: temporary disable `lint-commit-messages`" ([c5e86bf](https://github.com/vidavidorra/commitlint-config/commit/c5e86bf799c29ab258de7a0964a973cc6eb6cb10))
+
 ## [7.0.3](https://github.com/vidavidorra/commitlint-config/compare/v7.0.2...v7.0.3) (2024-03-26)
 
 ### Bug Fixes
