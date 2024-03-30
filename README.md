@@ -3,7 +3,7 @@
 [**commitlint**][commitlint] configuration extending [@commitlint/config-conventional][@commitlint/config-conventional].
 
 - Based on [@commitlint/config-conventional][@commitlint/config-conventional].
-- Allow longer commit messages headers specifically for dependency management tools like [Renovate](https://www.mend.io/renovate/) and [Dependabot](https://dependabot.com/).
+- Allow longer commit messages headers specifically for dependency management tools like [**Renovate**](https://www.mend.io/renovate/) and [**Dependabot**](https://dependabot.com/).
 - No restriction on maximum line length of body and footer.
 
 ---

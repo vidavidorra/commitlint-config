@@ -46,20 +46,20 @@ This configuration is extending [@commitlint/config-conventional][@commitlint/co
     200
     ```
 
-  > [!TIP]
-  > Regular commits have the default header length and fail if the header is too long.
-  >
-  > ```shell
-  > $ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore' | npx commitlint  # passes, 96 characters
-  > $ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore, V for Vendetta' | npx commitlint  # fails, 112 characters
-  > ```
-  >
-  > [**Renovate**][renovate] and [**Dependabot**][dependabot] commits have extended header length.
-  >
-  > ```shell
-  > $ echo 'chore(deps): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world - A. Moore' | npx commitlint # passes, 200 characters
-  > $ echo 'chore(deps): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world - Alan Moore' | npx commitlint # fails, 202 characters
-  > ```
+> [!NOTE]
+> Regular commits have the default header length and fail if the header is too long.
+>
+> ```shell
+> $ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore' | npx commitlint  # passes, 96 characters
+> $ echo 'chore: knowledge, like air, is vital to life. Like air, no one should be denied it. - Alan Moore, V for Vendetta' | npx commitlint  # fails, 112 characters
+> ```
+>
+> [**Renovate**][renovate] and [**Dependabot**][dependabot] commits have extended header length.
+>
+> ```shell
+> $ echo 'chore(deps): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world - A. Moore' | npx commitlint # passes, 200 characters
+> $ echo 'chore(deps): we are told to remember the idea, not the man. Because a man can fail. He can be caught, he can be killed and forgotten. But 400 years later, an idea can still change the world - Alan Moore' | npx commitlint # fails, 202 characters
+> ```
 
 <!-- References -->
 
