@@ -1,3 +1,9 @@
+## [7.0.6](https://github.com/vidavidorra/commitlint-config/compare/v7.0.5...v7.0.6) (2024-04-26)
+
+### Bug Fixes
+
+- **deps:** update dependency @commitlint/cli to v19.3.0 ([5c7914f](https://github.com/vidavidorra/commitlint-config/commit/5c7914ffc0d9b4aea32d51f0264903fbdb45c4f0))
+
 ## [7.0.5](https://github.com/vidavidorra/commitlint-config/compare/v7.0.4...v7.0.5) (2024-04-17)
 
 ### Bug Fixes
