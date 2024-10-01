@@ -1,3 +1,11 @@
+## [7.0.7](https://github.com/vidavidorra/commitlint-config/compare/v7.0.6...v7.0.7) (2024-10-01)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v19.4.0 ([dcf9fa2](https://github.com/vidavidorra/commitlint-config/commit/dcf9fa2f118cca2213d764634f719b8dc0aaa1a0))
+- **deps:** update commitlint monorepo to v19.4.1 ([6bfbd7b](https://github.com/vidavidorra/commitlint-config/commit/6bfbd7bb223eec0d7c8bf78500580911e7ed621d))
+- **deps:** update commitlint monorepo to v19.5.0 ([3aa78f4](https://github.com/vidavidorra/commitlint-config/commit/3aa78f4f806d6001f67dbfbd2274f916b7af061e))
+
 ## [7.0.6](https://github.com/vidavidorra/commitlint-config/compare/v7.0.5...v7.0.6) (2024-04-26)
 
 ### Bug Fixes
