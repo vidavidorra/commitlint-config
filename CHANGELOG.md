@@ -1,3 +1,9 @@
+## [7.0.8](https://github.com/vidavidorra/commitlint-config/compare/v7.0.7...v7.0.8) (2024-11-04)
+
+### Continuous Integration
+
+- build and test with Node.js 20, 22 and 23 ([7abd98e](https://github.com/vidavidorra/commitlint-config/commit/7abd98e29b1a815eaa94ae09d51e5b47f8497898))
+
 ## [7.0.7](https://github.com/vidavidorra/commitlint-config/compare/v7.0.6...v7.0.7) (2024-10-01)
 
 ### Bug Fixes
