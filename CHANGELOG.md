@@ -1,3 +1,9 @@
+## [7.0.10](https://github.com/vidavidorra/commitlint-config/compare/v7.0.9...v7.0.10) (2024-11-22)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v19.6.0 ([2d4b6b4](https://github.com/vidavidorra/commitlint-config/commit/2d4b6b44bce47ed38296feb22b31de9146d47692))
+
 ## [7.0.9](https://github.com/vidavidorra/commitlint-config/compare/v7.0.8...v7.0.9) (2024-11-04)
 
 ### Bug Fixes
