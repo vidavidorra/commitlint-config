@@ -201,7 +201,7 @@
     "c8": "10.1.2",
     "husky": "9.1.7",
     "lint-staged": "15.2.10",
-    "prettier": "3.4.1",
+    "prettier": "3.4.2",
     "semantic-release": "24.2.0",
     "typescript": "5.7.2",
     "xo": "0.59.3"
