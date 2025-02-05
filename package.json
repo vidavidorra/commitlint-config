@@ -185,13 +185,13 @@
     ]
   },
   "dependencies": {
-    "@commitlint/config-conventional": "19.6.0",
+    "@commitlint/config-conventional": "19.7.1",
     "commitlint-plugin-function-rules": "4.0.1"
   },
   "devDependencies": {
     "@ava/typescript": "5.0.0",
-    "@commitlint/cli": "19.6.1",
-    "@commitlint/lint-19.x": "npm:@commitlint/lint@19.6.0",
+    "@commitlint/cli": "19.7.1",
+    "@commitlint/lint-19.x": "npm:@commitlint/lint@19.7.1",
     "@commitlint/load-19.x": "npm:@commitlint/load@19.6.1",
     "@commitlint/types": "19.5.0",
     "@semantic-release/changelog": "6.0.3",
