@@ -195,7 +195,7 @@
     "@commitlint/load-19.x": "npm:@commitlint/load@19.6.1",
     "@commitlint/types": "19.5.0",
     "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/exec": "7.0.2",
+    "@semantic-release/exec": "7.0.3",
     "@semantic-release/git": "10.0.1",
     "ava": "6.2.0",
     "c8": "10.1.3",
