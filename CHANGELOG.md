@@ -1,3 +1,9 @@
+## [7.0.16](https://github.com/vidavidorra/commitlint-config/compare/v7.0.15...v7.0.16) (2025-06-03)
+
+### Continuous Integration
+
+- include Node.js v24 and drop v23, which is EOL June 1st ([27dab6e](https://github.com/vidavidorra/commitlint-config/commit/27dab6ebcb88b93bed0bcfa7188c124d06d1e82e))
+
 ## [7.0.15](https://github.com/vidavidorra/commitlint-config/compare/v7.0.14...v7.0.15) (2025-05-29)
 
 ### Bug Fixes
