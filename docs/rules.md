@@ -31,7 +31,6 @@ This configuration is extending [@commitlint/config-conventional][@commitlint/co
 - **rule**: `always`.
 - **value**:
   The value is dependent on the commit header and has the following values.
-
   - Default.
     ```json
     100
