@@ -8,13 +8,13 @@ on:
   pull_request: null
 jobs:
   lint-commit-messages:
-    uses: vidavidorra/.github/.github/workflows/lint-commit-messages.yml@7d6e841be097d7b4c9e30dc3fbeb474158195ca1 # v5.0.66
+    uses: vidavidorra/.github/.github/workflows/lint-commit-messages.yml@eaab1e3225bdc197a069227096305a756bfface1 # v5.0.67
     with:
       configFile: ./commitlint.config.cjs
   lint:
-    uses: vidavidorra/.github/.github/workflows/node-lint.yml@7d6e841be097d7b4c9e30dc3fbeb474158195ca1 # v5.0.66
+    uses: vidavidorra/.github/.github/workflows/node-lint.yml@eaab1e3225bdc197a069227096305a756bfface1 # v5.0.67
   build:
-    uses: vidavidorra/.github/.github/workflows/node-build.yml@7d6e841be097d7b4c9e30dc3fbeb474158195ca1 # v5.0.66
+    uses: vidavidorra/.github/.github/workflows/node-build.yml@eaab1e3225bdc197a069227096305a756bfface1 # v5.0.67
     strategy:
       fail-fast: false
       matrix:
@@ -22,7 +22,7 @@ jobs:
     with:
       nodeVersion: ${{ matrix.nodeVersion }}
   test:
-    uses: vidavidorra/.github/.github/workflows/node-test.yml@7d6e841be097d7b4c9e30dc3fbeb474158195ca1 # v5.0.66
+    uses: vidavidorra/.github/.github/workflows/node-test.yml@eaab1e3225bdc197a069227096305a756bfface1 # v5.0.67
     strategy:
       fail-fast: false
       matrix:
@@ -30,7 +30,7 @@ jobs:
     with:
       nodeVersion: ${{ matrix.nodeVersion }}
   code-coverage:
-    uses: vidavidorra/.github/.github/workflows/node-test-coverage.yml@7d6e841be097d7b4c9e30dc3fbeb474158195ca1 # v5.0.66
+    uses: vidavidorra/.github/.github/workflows/node-test-coverage.yml@eaab1e3225bdc197a069227096305a756bfface1 # v5.0.67
     needs:
       - lint
       - build
@@ -38,7 +38,7 @@ jobs:
     secrets:
       codecovToken: ${{ secrets.CODECOV_TOKEN }}
   release:
-    uses: vidavidorra/.github/.github/workflows/release.yml@7d6e841be097d7b4c9e30dc3fbeb474158195ca1 # v5.0.66
+    uses: vidavidorra/.github/.github/workflows/release.yml@eaab1e3225bdc197a069227096305a756bfface1 # v5.0.67
     needs:
       - lint-commit-messages
       - lint
