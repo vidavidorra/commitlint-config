@@ -1,6 +1,8 @@
 import test from 'ava';
 import load19x from '@commitlint/load-19.x';
 import lint19x from '@commitlint/lint-19.x';
+import load20x from '@commitlint/load-20.x';
+import lint20x from '@commitlint/lint-20.x';
 import {type LoadOptions} from '@commitlint/types';
 import {headerMaxLength} from './rules/index.js';
 import config from './index.js';
@@ -8,6 +10,7 @@ import config from './index.js';
 /* eslint-disable @typescript-eslint/naming-convention */
 const versions = {
   '19.x': {load: load19x, lint: lint19x},
+  '20.x': {load: load20x, lint: lint20x},
 } as const;
 /* eslint-enable @typescript-eslint/naming-convention */
 
@@ -48,6 +51,7 @@ const loadConfig = test.macro<[keyof typeof versions]>({
     `@commitlint/load@${version} can load the configuration`,
 });
 test(loadConfig, '19.x');
+test(loadConfig, '20.x');
 
 const lintUsingConfiguration = test.macro<[keyof typeof versions]>({
   async exec(t, version) {
@@ -67,3 +71,4 @@ const lintUsingConfiguration = test.macro<[keyof typeof versions]>({
     `@commitlint/lint@${version} can use the configuration`,
 });
 test(lintUsingConfiguration, '19.x');
+test(lintUsingConfiguration, '20.x');
