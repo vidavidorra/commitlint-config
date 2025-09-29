@@ -1,3 +1,9 @@
+## [7.1.0](https://github.com/vidavidorra/commitlint-config/compare/v7.0.16...v7.1.0) (2025-09-29)
+
+### Features
+
+- **deps:** update commitlint monorepo to v20 (major) ([#256](https://github.com/vidavidorra/commitlint-config/issues/256)) ([80f4c31](https://github.com/vidavidorra/commitlint-config/commit/80f4c31ad2c0f9b8ff93871549011383394d236b))
+
 ## [7.0.16](https://github.com/vidavidorra/commitlint-config/compare/v7.0.15...v7.0.16) (2025-06-03)
 
 ### Continuous Integration
