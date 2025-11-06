@@ -1,3 +1,9 @@
+## [7.1.3](https://github.com/vidavidorra/commitlint-config/compare/v7.1.2...v7.1.3) (2025-11-06)
+
+### Continuous Integration
+
+- add minimal GitHub Action permissions ([0f3a4eb](https://github.com/vidavidorra/commitlint-config/commit/0f3a4eb06aa5c146b2afaee94623faf5e7db56c3))
+
 ## [7.1.2](https://github.com/vidavidorra/commitlint-config/compare/v7.1.1...v7.1.2) (2025-10-03)
 
 ### Bug Fixes
