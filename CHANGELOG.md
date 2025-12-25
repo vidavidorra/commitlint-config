@@ -1,3 +1,10 @@
+## [7.1.7](https://github.com/vidavidorra/commitlint-config/compare/v7.1.6...v7.1.7) (2025-12-25)
+
+### Continuous Integration
+
+- replace semantic-release config with `@vidavidorra/semantic-release-config` ([452798e](https://github.com/vidavidorra/commitlint-config/commit/452798eacbbc1b97c39abd5ac1d3ac43d6f06e2b))
+- use ESLint for linting, instead of XO (which uses ESLint internally) ([daaa869](https://github.com/vidavidorra/commitlint-config/commit/daaa869b93ff581ed7d5bc6153461eb1677c98e1))
+
 ## [7.1.6](https://github.com/vidavidorra/commitlint-config/compare/v7.1.5...v7.1.6) (2025-12-09)
 
 ### Bug Fixes
