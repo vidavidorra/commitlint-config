@@ -27,6 +27,23 @@ test('creates the "function-rules/header-max-length" rule', (t) => {
   t.deepEqual(rule, [2, 'always', headerMaxLength]);
 });
 
+/**
+ * The type of the `RulesConfig` have changed in [commitlint v20.3.1](
+ * https://github.com/conventional-changelog/commitlint/releases/tag/v20.3.1),
+ * and are no longer compatible with those from v19. Specifically the types of
+ * the `scope-case` and `scope-enum` rules have been changed to also accept a
+ * rule object. The `config` should therefore not use these rules, specifically
+ * not the object version, to ensure backwards compatibility with v19. This
+ * tests validates that is the case and warrants the use of `as unknown as any`
+ * in some of the tests below.
+ */
+test('does not use the "scope-case" and "scope-enum" rules', (t) => {
+  t.is(config.rules?.['scope-case'], undefined);
+  t.is(config.rules?.['function-rules/scope-case'], undefined);
+  t.is(config.rules?.['scope-enum'], undefined);
+  t.is(config.rules?.['function-rules/scope-enum'], undefined);
+});
+
 const disables = test.macro<[string]>({
   exec(t, ruleName) {
     t.deepEqual(config.rules?.[ruleName], [0]);
@@ -45,25 +62,36 @@ test(disables, 'header-max-length');
 const loadOptions: LoadOptions = {file: 'package.json'} as const;
 const loadConfig = test.macro<[keyof typeof versions]>({
   async exec(t, version) {
-    await t.notThrowsAsync(versions[version].load(config, loadOptions));
+    await t.notThrowsAsync(
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+      versions[version].load(config as unknown as any, loadOptions),
+    );
   },
   title: (_, version) =>
     `@commitlint/load@${version} can load the configuration`,
 });
+
 test(loadConfig, '19.x');
 test(loadConfig, '20.x');
 
 const lintUsingConfiguration = test.macro<[keyof typeof versions]>({
   async exec(t, version) {
-    const qualifiedConfig = await versions[version].load(config, loadOptions);
+    const qualifiedConfig = await versions[version].load(
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+      config as unknown as any,
+      loadOptions,
+    );
     const input = [
       'chore(deps): we are told to remember the idea, not the man. Because a',
       'man can fail. He can be caught, he can be killed and forgotten. But 400',
       'years later, an idea can still change the world - A. Moore',
     ].join(' ');
-    const outcome = await versions[version].lint(input, qualifiedConfig.rules, {
-      plugins: qualifiedConfig.plugins,
-    });
+    const outcome = await versions[version].lint(
+      input,
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+      qualifiedConfig.rules as unknown as any,
+      {plugins: qualifiedConfig.plugins},
+    );
 
     t.deepEqual(outcome, {input, valid: true, errors: [], warnings: []});
   },
