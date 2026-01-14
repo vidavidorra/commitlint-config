@@ -1,3 +1,13 @@
+## [7.1.12](https://github.com/vidavidorra/commitlint-config/compare/v7.1.11...v7.1.12) (2026-01-14)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v20.3.1 ([740ed9c](https://github.com/vidavidorra/commitlint-config/commit/740ed9cf8dfdece855ea91506a6abd27afae6a01))
+
+### Tests
+
+- add test compatibility for combined v19 and v20 lint and load tests ([3ff6e99](https://github.com/vidavidorra/commitlint-config/commit/3ff6e99aede3f8d9e367adc230fab4a76a47a2d1))
+
 ## [7.1.11](https://github.com/vidavidorra/commitlint-config/compare/v7.1.10...v7.1.11) (2026-01-14)
 
 ### Bug Fixes
