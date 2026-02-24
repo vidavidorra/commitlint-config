@@ -1,3 +1,9 @@
+## [7.1.13](https://github.com/vidavidorra/commitlint-config/compare/v7.1.12...v7.1.13) (2026-02-24)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo ([#262](https://github.com/vidavidorra/commitlint-config/issues/262)) ([ad680fc](https://github.com/vidavidorra/commitlint-config/commit/ad680fc9ce205acb98d0b537c6aaa167f98e96a0))
+
 ## [7.1.12](https://github.com/vidavidorra/commitlint-config/compare/v7.1.11...v7.1.12) (2026-01-14)
 
 ### Bug Fixes
