@@ -69,7 +69,7 @@
     "@commitlint/lint-20.x": "npm:@commitlint/lint@20.4.2",
     "@commitlint/load-20.x": "npm:@commitlint/load@20.4.0",
     "@commitlint/types": "20.4.0",
-    "@vidavidorra/eslint-config": "1.0.3",
+    "@vidavidorra/eslint-config": "1.0.4",
     "@vidavidorra/prettier-config": "1.0.6",
     "@vidavidorra/semantic-release-config": "1.0.4",
     "ava": "6.4.1",
