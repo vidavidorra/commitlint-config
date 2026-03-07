@@ -1,3 +1,9 @@
+## [7.1.15](https://github.com/vidavidorra/commitlint-config/compare/v7.1.14...v7.1.15) (2026-03-07)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v20.4.3 ([3b0330b](https://github.com/vidavidorra/commitlint-config/commit/3b0330b88f8592139e41ae832228aa549e4b660b))
+
 ## [7.1.14](https://github.com/vidavidorra/commitlint-config/compare/v7.1.13...v7.1.14) (2026-02-24)
 
 ### Bug Fixes
