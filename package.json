@@ -65,9 +65,9 @@
   },
   "devDependencies": {
     "@ava/typescript": "7.0.0",
-    "@commitlint/cli": "20.5.0",
+    "@commitlint/cli": "20.5.2",
     "@commitlint/lint-20.x": "npm:@commitlint/lint@20.5.0",
-    "@commitlint/load-20.x": "npm:@commitlint/load@20.5.0",
+    "@commitlint/load-20.x": "npm:@commitlint/load@20.5.2",
     "@commitlint/types": "20.5.0",
     "@vidavidorra/eslint-config": "1.0.4",
     "@vidavidorra/prettier-config": "1.0.7",
