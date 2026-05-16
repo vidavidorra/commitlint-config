@@ -1,3 +1,22 @@
+## [8.0.0](https://github.com/vidavidorra/commitlint-config/compare/v7.1.19...v8.0.0) (2026-05-16)
+
+### ⚠ BREAKING CHANGES
+
+- require Node.js 22 minimum, which is the current active LTS
+
+### Features
+
+- require Node.js 22 minimum, which is the current active LTS ([c2c2ab9](https://github.com/vidavidorra/commitlint-config/commit/c2c2ab9ccd6b51e88ed804da4175c357372bdd16))
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v21 ([f0224da](https://github.com/vidavidorra/commitlint-config/commit/f0224daed10fe64cc687454c2fcd7211fa5f3025))
+- **deps:** update dependency commitlint-plugin-function-rules to v5 ([#272](https://github.com/vidavidorra/commitlint-config/issues/272)) ([ea6b757](https://github.com/vidavidorra/commitlint-config/commit/ea6b75740d7c8db377d6f62c4686033d230e2b30))
+
+### Tests
+
+- add tests for commitlint v21 ([b639a5d](https://github.com/vidavidorra/commitlint-config/commit/b639a5d1a957e286bd14402d2d8439a7ee9f6c5f))
+
 ## [7.1.19](https://github.com/vidavidorra/commitlint-config/compare/v7.1.18...v7.1.19) (2026-05-03)
 
 ### Bug Fixes
