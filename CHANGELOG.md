@@ -1,3 +1,9 @@
+## [8.0.1](https://github.com/vidavidorra/commitlint-config/compare/v8.0.0...v8.0.1) (2026-06-02)
+
+### Bug Fixes
+
+- **deps:** update commitlint monorepo to v21.0.2 ([fec813d](https://github.com/vidavidorra/commitlint-config/commit/fec813d04c3b024ad14aefae21a27bbbf0b6686b))
+
 ## [8.0.0](https://github.com/vidavidorra/commitlint-config/compare/v7.1.19...v8.0.0) (2026-05-16)
 
 ### ⚠ BREAKING CHANGES
